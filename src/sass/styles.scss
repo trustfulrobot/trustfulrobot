@@ -21,11 +21,51 @@ body {
 	position: absolute;
 	object-fit: cover;
 	object-position: center center;
+	filter: url('#duotone');
 }
 .foreground {
+	z-index: 3;
 }
 .background {
+	z-index: 1;
 }
 .sooncome {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	// display: block;
 	display: none;
+	overflow: hidden;
+	z-index: 2;
+	span {
+		position: absolute;
+		width: 100vw;
+		height: 168.75vw; // height of single svg is 18.75vw * 9
+		display: block;
+		text-indent: -9999em;
+		background-image: url('/images/svg-sooncome.svg');
+		background-repeat: repeat-y;
+		animation: slide 10s linear infinite, blur 17s linear infinite;
+		opacity: 0.5;
+		background-blend-mode: screen;
+	}
+}
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(0, -18.75vw, 0); // height of single svg is 18.75vw
+  }
+}
+@keyframes blur{
+  0%{
+    filter: blur(5px);
+  }
+  50%{
+  	filter: blur(0px);
+  }
+  100%{
+    filter: blur(5px);
+  }
 }
