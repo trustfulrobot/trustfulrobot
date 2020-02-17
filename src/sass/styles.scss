@@ -4,39 +4,39 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	display: block;
-	position: relative;
 }
 .container {
 	width: 100%;
 	height: 100vh;
 	overflow: hidden;
 	display: block;
+	position: relative;
+	z-index: 1;
+	filter: url('#duotone');
 }
 .foreground, .background {
+	position: absolute;
 	display: block;
 	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
-	position: absolute;
 	object-fit: cover;
 	object-position: center center;
-	filter: url('#duotone');
 }
 .foreground {
-	z-index: 3;
+	z-index: 100;
 }
 .background {
-	z-index: 1;
+	z-index: 10;
 }
 .sooncome {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	// display: block;
-	display: none;
+	display: block;
 	overflow: hidden;
-	z-index: 2;
+	z-index: 50;
 	span {
 		position: absolute;
 		width: 100vw;
@@ -46,8 +46,8 @@ body {
 		background-image: url('/images/svg-sooncome.svg');
 		background-repeat: repeat-y;
 		animation: slide 10s linear infinite, blur 17s linear infinite;
-		opacity: 0.5;
-		background-blend-mode: screen;
+		// opacity: 0.5;
+		// background-blend-mode: screen;
 	}
 }
 @keyframes slide{
@@ -60,12 +60,12 @@ body {
 }
 @keyframes blur{
   0%{
-    filter: blur(5px);
+    filter: blur(10px);
   }
   50%{
   	filter: blur(0px);
   }
   100%{
-    filter: blur(5px);
+    filter: blur(10px);
   }
 }
