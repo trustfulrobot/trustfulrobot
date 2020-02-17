@@ -1,4 +1,6 @@
 import React from "react"
 import "../sass/styles.scss"
 
-export default () => <div>Hello world!</div>
+export default () => <div>SOON 
+
+COME</div>
