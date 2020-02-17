@@ -2,14 +2,14 @@ import React from "react"
 import Color from "color"
 import "../sass/styles.scss"
 
-const colorShadows = "#3d2b67";
-const colorHighlights = "#30bfea";
+const colorShadows = "#fd1b85";
+const colorHighlights = "#d4efed";
 const colorShadows_R = Color.rgb(colorShadows).red();
 const colorShadows_G = Color.rgb(colorShadows).blue();
 const colorShadows_B = Color.rgb(colorShadows).green();
 const colorHighlights_R = Color.rgb(colorHighlights).red();
-const colorHighlights_G = Color.rgb(colorHighlights).blue();
-const colorHighlights_B = Color.rgb(colorHighlights).green();
+const colorHighlights_B = Color.rgb(colorHighlights).blue();
+const colorHighlights_G = Color.rgb(colorHighlights).green();
 const feFuncRValues = colorShadows_R / 256 + " " + colorHighlights_R / 256;
 const feFuncGValues = colorShadows_G / 256 + " " + colorHighlights_G / 256;
 const feFuncBValues = colorShadows_B / 256 + " " + colorHighlights_B / 256;
@@ -24,9 +24,10 @@ export default () => <div className="container"><img className="background" src=
   		    0 0 0 1 0" >
   		</feColorMatrix>
       <feComponentTransfer colorInterpolationFilters="sRGB" result="duotone">
-        <feFuncG type="table" tableValues={feFuncRValues}></feFuncG>
-        <feFuncB type="table" tableValues={feFuncGValues}></feFuncB>
-        <feFuncA type="table" tableValues={feFuncBValues}></feFuncA>
+        <feFuncR type="table" tableValues={feFuncRValues}></feFuncR>
+        <feFuncG type="table" tableValues={feFuncGValues}></feFuncG>
+        <feFuncB type="table" tableValues={feFuncBValues}></feFuncB>
+        <feFuncA type="table" tableValues="0 1"></feFuncA>
       </feComponentTransfer> 
     </filter>   
   </svg>
