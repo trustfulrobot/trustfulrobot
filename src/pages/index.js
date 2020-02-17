@@ -2,14 +2,14 @@ import React from "react"
 import Color from "color"
 import "../sass/styles.scss"
 
-const colorShadows = "#fd1b85";
-const colorHighlights = "#d4efed";
+const colorShadows = "#70d28a";
+const colorHighlights = "#fd1b85";
 const colorShadows_R = Color.rgb(colorShadows).red();
 const colorShadows_G = Color.rgb(colorShadows).green();
 const colorShadows_B = Color.rgb(colorShadows).blue();
 const colorHighlights_R = Color.rgb(colorHighlights).red();
-const colorHighlights_B = Color.rgb(colorHighlights).green();
-const colorHighlights_G = Color.rgb(colorHighlights).blue();
+const colorHighlights_G = Color.rgb(colorHighlights).green();
+const colorHighlights_B = Color.rgb(colorHighlights).blue();
 const feFuncRValues = colorShadows_R / 255 + " " + colorHighlights_R / 255;
 const feFuncGValues = colorShadows_G / 255 + " " + colorHighlights_G / 255;
 const feFuncBValues = colorShadows_B / 255 + " " + colorHighlights_B / 255;
