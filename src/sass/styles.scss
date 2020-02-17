@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 100vh;
+	display: block;
+	position: relative;
+}
+.container {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: block;
+}
+.foreground, .background {
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	object-fit: cover;
+	object-position: center center;
+}
+.foreground {
+}
+.background {
+}
+.sooncome {
+	display: none;
+}
