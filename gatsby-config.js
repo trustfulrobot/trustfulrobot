@@ -5,7 +5,12 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Trustful Robot | Digital Shamanism`,
+    siteUrl: `https://trustfulrobot.com`,
+    description: `Trustful Robot is here to help you navigate through your digital world.  From Front End Development to Audio Engineering to 3D Simulations and Renders, I know about a lot of things and am curious to see how I can apply my knowledge to your problem.`,
+    twitter: `@trustfulrobot`
+  },
   plugins: [
   `gatsby-plugin-sass`,
   `gatsby-plugin-react-helmet`,
