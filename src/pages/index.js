@@ -2,8 +2,8 @@ import React from "react"
 import Color from "color"
 import "../sass/styles.scss"
 
-const colorShadows = "#70d28a";
-const colorHighlights = "#fd1b85";
+const colorShadows = "#1b224e";
+const colorHighlights = "#70d28a";
 const colorShadows_R = Color.rgb(colorShadows).red();
 const colorShadows_G = Color.rgb(colorShadows).green();
 const colorShadows_B = Color.rgb(colorShadows).blue();
