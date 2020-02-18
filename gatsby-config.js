@@ -8,7 +8,8 @@ module.exports = {
   /* Your site config here */
   plugins: [
   `gatsby-plugin-sass`,
-  resolve: `gatsby-plugin-favicon`,
+  {
+	  resolve: `gatsby-plugin-favicon`,
   	options: {
   		logo: './src/favicon.png',
   		appName: 'Trustful Robot',
@@ -30,5 +31,6 @@ module.exports = {
         windows: false
       }
   	}
-  ],
+  }
+  ]
 }
