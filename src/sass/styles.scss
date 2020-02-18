@@ -12,7 +12,7 @@ body {
 	display: block;
 	position: relative;
 	z-index: 1;
-	filter: url('#duotone');
+	filter: grayscale(0.75);
 }
 .foreground, .background {
 	position: absolute;
@@ -62,8 +62,20 @@ body {
   0%{
     filter: blur(10px);
   }
+  5%{
+  	filter: blur(5px);
+  }
+  30% {
+  	filter: blur(0px);
+  }
   50%{
   	filter: blur(0px);
+  }
+  70% {
+  	filter: blur(0px);
+  }
+  95%{
+  	filter: blur(5px);
   }
   100%{
     filter: blur(10px);
