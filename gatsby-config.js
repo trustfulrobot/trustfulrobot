@@ -14,8 +14,6 @@ module.exports = {
   		logo: './src/favicon.png',
   		appName: 'Trustful Robot',
   		appDescription: 'Trustful Robot Webite',
-  		developerName: 'Patrick Morrissey',
-  		developerURL: 'https://trustfulrobot.com',
   		display: 'browser',
       lang: 'en-US',
       background: '#fff',
