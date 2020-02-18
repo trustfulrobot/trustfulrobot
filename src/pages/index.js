@@ -11,6 +11,7 @@ export const SiteMetadata = graphql`
         siteUrl
         title
         twitter
+        description
       }
     }
   }
@@ -20,7 +21,7 @@ export default ({ data }) => (
   <div className="container">
     <Helmet defer={false} defaultTitle={data.site.siteMetadata.title} titleTemplate={`%s | ${data.site.siteMetadata.title}`}>
       <link rel="canonical" href={`${data.site.siteMetadata.siteUrl}`} />
-      <meta name="docsearch:version" content="2.0" />
+      <meta name="description" content={`${data.site.siteMetadata.description}`} />
       <meta
         name="viewport"
         content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
