@@ -1,3 +1,9 @@
+:root {
+	--shadows: 								#4e2165;
+	--highlights: 						#51dce9;
+	--shadows-blend-mode: 		lighten;
+	--highlights-blend-mode: 	darken;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -12,7 +18,36 @@ body {
 	display: block;
 	position: relative;
 	z-index: 1;
-	filter: grayscale(0.75);
+}
+main {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	filter: grayscale(0.618);
+	// &:before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	z-index: 100;
+	// 	mix-blend-mode: var(--highlights-blend-mode);
+	// 	background-color: var(--highlights);
+	// }
+	// &:after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	left: 0;
+	// 	top: 0;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	z-index: 100;
+	// 	mix-blend-mode: var(--shadows-blend-mode);
+	// 	background-color: var(--shadows);
+	// }
 }
 .foreground, .background {
 	position: absolute;
@@ -37,6 +72,7 @@ body {
 	display: block;
 	overflow: hidden;
 	z-index: 50;
+	opacity: 0.618;
 	span {
 		position: absolute;
 		width: 100vw;
@@ -46,8 +82,6 @@ body {
 		background-image: url('https://trustfulrobot-landingpage.s3.us-east-2.amazonaws.com/svg-sooncome.svg');
 		background-repeat: repeat-y;
 		animation: slide 10s linear infinite, blur 17s linear infinite;
-		// opacity: 0.5;
-		// background-blend-mode: screen;
 	}
 }
 @keyframes slide{
