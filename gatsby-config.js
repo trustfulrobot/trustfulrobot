@@ -12,6 +12,13 @@ module.exports = {
     twitter: `@trustfulrobot`
   },
   plugins: [
+  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: "UA-158785070-1",
+      head: true
+    },
+  },
   `gatsby-plugin-sass`,
   `gatsby-plugin-react-helmet`,
   {
