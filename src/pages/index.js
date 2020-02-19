@@ -33,6 +33,7 @@ export default ({ data }) => (
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content={data.site.siteMetadata.twitter} />
+      <html lang="en" />
     </Helmet>
     <main>
       <img className="background" src="https://trustfulrobot-landingpage.s3.us-east-2.amazonaws.com/PatrickBatemanFistbump_background.jpg" alt="Soon Come - Background - Room" srcSet="https://trustfulrobot-landingpage.s3.us-east-2.amazonaws.com/PatrickBatemanFistbump_background-480x640.jpg 480w, https://trustfulrobot-landingpage.s3.us-east-2.amazonaws.com/PatrickBatemanFistbump_background-768x1024.jpg 768w, https://trustfulrobot-landingpage.s3.us-east-2.amazonaws.com/PatrickBatemanFistbump_background-960x1280.jpg 960w, https://trustfulrobot-landingpage.s3.us-east-2.amazonaws.com/PatrickBatemanFistbump_background-1280x1707.jpg 1280w, https://trustfulrobot-landingpage.s3.us-east-2.amazonaws.com/PatrickBatemanFistbump_background-1536x2048.jpg 1536w, https://trustfulrobot-landingpage.s3.us-east-2.amazonaws.com/PatrickBatemanFistbump_background-1920x2560.jpg 1920w, https://trustfulrobot-landingpage.s3.us-east-2.amazonaws.com/PatrickBatemanFistbump_background.jpg 2560w" />
