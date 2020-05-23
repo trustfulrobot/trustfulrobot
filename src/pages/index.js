@@ -1,7 +1,11 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
-import "../sass/styles.scss"
+import "../sass/variables.scss"
+import "../sass/colors.scss"
+import "../sass/fonts.scss"
+import "../sass/elements.scss"
+import "../sass/trustfulrobot.scss"
 
 
 export const SiteMetadata = graphql`
