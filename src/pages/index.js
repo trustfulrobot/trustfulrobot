@@ -1,12 +1,8 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
-import "../sass/variables.scss"
-import "../sass/colors.scss"
-import "../sass/fonts.scss"
-import "../sass/elements.scss"
 import "../sass/trustfulrobot.scss"
-import svg_logo from "../images/TrustfulRobot_DigitalShamanism.svg"
+import svg_logo from "../../static/images/TrustfulRobot_DigitalShamanism.svg"
 
 
 
@@ -42,26 +38,39 @@ export default ({ data }) => (
       <html lang="en" />
     </Helmet>
     <main>
-      <h1>Trustful Robot</h1>
-      <p>I am a Senior Developer with a history of serving in both front-end and back-end roles that has also, at times, served as a content author and liaison with website clients. As such, I feel that I have a deep sensitivity to the full spectrum of perspectives of those involved in the full life-cycle of a website. I seek to create web experiences that are not only elegant as a user or content author but are a delight to work with as a fellow developer, based around a rock-solid foundational knowledge of semantic HTML, CSS, and Javascript.</p>
+      <section className="tr_block tr_block__intro">
+        <h1><img src={`${svg_logo}`} alt="Trustful Robot | Digital Shamanism" /></h1>
+        <p>I am a Senior Developer with a history of serving in both front-end and back-end roles that has also, at times, served as a content author and liaison with website clients. As such, I feel that I have a deep sensitivity to the full spectrum of perspectives of those involved in the full life-cycle of a website. I seek to create web experiences that are not only elegant as a user or content author but are a delight to work with as a fellow developer, based around a rock-solid foundational knowledge of semantic HTML, CSS, and Javascript.</p>
 
-      <p>I am a voracious and insatiable learner, constantly searching for increasingly optimal paths and revolutionary insights.</p>
+        <p>I am a voracious and insatiable learner, constantly searching for increasingly optimal paths and revolutionary insights.</p>
+      </section>
 
-      <h2>Technology</h2>
-      <h3>My current preferred tech stack:</h3>
-      <ul>
-        <li>Static site generation with GatsbyJS and GraphQL</li>
-        <li>Content management with Prismic</li>
-        <li>Hosting with Netlify & AWS</li>
-        <li>Continuous Integration with GitHub</li>
-      </ul>
-
-      <h3>My preferred WordPress tech stack:</h3>
-      <ul>
-        <li>Underscores starter theme</li>
-        <li>WPGulp workflow based on npm and Sass</li>
-        <li>Advanced Custom Fields Pro</li>
-      </ul>
+      <section className="tr_block tr_block__technology">
+        <h2>Technology</h2>
+        <section>
+          <h3>My current preferred tech stack:</h3>
+          <ul>
+            <li>Static site generation with <strong>GatsbyJS</strong> and <strong>GraphQL</strong></li>
+            <li>Content management with <strong>Prismic</strong></li>
+            <li>Hosting with <strong>Netlify</strong> & <strong>AWS</strong></li>
+            <li><strong>Continuous Integration</strong> with <strong>GitHub</strong></li>
+          </ul>
+        </section>
+        <section>
+          <h3>My preferred <strong>WordPress</strong> tech stack:</h3>
+          <ul>
+            <li><strong>Underscores</strong> starter theme</li>
+            <li><strong>WPGulp</strong> workflow based on <strong>npm</strong> and <strong>SASS</strong></li>
+            <li><strong>Advanced Custom Fields Pro</strong></li>
+          </ul>
+        </section>
+      </section>
+      <section className="tr_block tr_block__work">
+        <h2>Work</h2>
+      </section>
+      <section className="tr_block tr_block__contact">
+        <h2>Contact</h2>
+      </section>
     </main>
   </div>
 )
