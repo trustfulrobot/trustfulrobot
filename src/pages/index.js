@@ -6,6 +6,8 @@ import "../sass/colors.scss"
 import "../sass/fonts.scss"
 import "../sass/elements.scss"
 import "../sass/trustfulrobot.scss"
+import svg_logo from "../images/TrustfulRobot_DigitalShamanism.svg"
+
 
 
 export const SiteMetadata = graphql`
