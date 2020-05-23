@@ -42,9 +42,6 @@ export default ({ data }) => (
     <main>
       <h1>Trustful Robot</h1>
       <h2>Digital Shamanism</h2>
-      <p><em>test</em> text</p>
-      <p><strong>test</strong> text</p>
-      <p><strong><em>test</em></strong> text</p>
     </main>
   </div>
 )
