@@ -15,7 +15,7 @@ export const SiteMetadata = graphql`
         twitter
         description
       }
-    }
+    },
   }
 `
 
