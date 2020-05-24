@@ -20,14 +20,13 @@ module.exports = {
   },
   `gatsby-plugin-sass`,
   `gatsby-plugin-react-helmet`,
-  
   {
-	  resolve: `gatsby-plugin-favicon`,
-  	options: {
-  		logo: './src/favicon.png',
-  		appName: 'Trustful Robot',
-  		appDescription: 'Trustful Robot Webite',
-  		display: 'browser',
+    resolve: `gatsby-plugin-favicon`,
+    options: {
+      logo: './src/favicon.png',
+      appName: 'Trustful Robot',
+      appDescription: 'Trustful Robot Webite',
+      display: 'browser',
       lang: 'en-US',
       background: '#fff',
       theme_color: '#fff',
@@ -41,7 +40,22 @@ module.exports = {
         yandex: false,
         windows: false
       }
-  	}
-  }
+    }
+  },
+  {
+    resolve: `gatsby-source-instagram`,
+    options: {
+      username: `frightlab`
+    }
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `images`,
+      path: path.join(__dirname, `static`, `images`)
+    }
+  },
+  `gatsby-transformer-sharp`,
+  `gatsby-plugin-sharp`
   ]
 }
