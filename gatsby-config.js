@@ -41,21 +41,6 @@ module.exports = {
         windows: false
       }
     }
-  },
-  {
-    resolve: `gatsby-source-instagram`,
-    options: {
-      username: `frightlab`
-    }
-  },
-  {
-    resolve: `gatsby-source-filesystem`,
-    options: {
-      name: `images`,
-      path: path.join(__dirname, `static`, `images`)
-    }
-  },
-  `gatsby-transformer-sharp`,
-  `gatsby-plugin-sharp`
+  }
   ]
 }

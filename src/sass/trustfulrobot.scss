@@ -38,6 +38,8 @@
 .tr_block__instagram {
 	color: $tr_grey_lt;
 	background-color: $tr_grey_dk;
+	display: none;
+	visibility: hidden;
 }
 
 .tr_block__contact {
