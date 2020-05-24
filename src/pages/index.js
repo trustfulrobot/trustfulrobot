@@ -96,20 +96,14 @@ export default ({ data }) => (
             </a></p>
           </section>
           <section>
-            <p><a href="https://www.instagram.com/frightlab/" target="_blank" rel="noopener noreferrer">
-              Instagram
-            </a></p>
-          </section>
-          <section>
             <p><a href="https://www.linkedin.com/in/p-morrissey/" target="_blank" rel="noopener noreferrer">
               LinkedIn
             </a></p>
           </section>
           <section>
-            <p><a href="http://patrickmorrissey.com" target="_blank" rel="noopener noreferrer">
-              patrickmorrissey.com
+            <p><a href="https://github.com/trustfulrobot" target="_blank" rel="noopener noreferrer">
+              GitHub
             </a></p>
-            <p>Musings and rantings.  A blog of sorts.</p>
           </section>
         </div>
       </section>
