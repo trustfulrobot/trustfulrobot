@@ -40,9 +40,9 @@ export default ({ data }) => (
     <main>
       <section className="tr_block tr_block__intro">
         <h1><img src={`${svg_logo}`} alt="Trustful Robot | Digital Shamanism" /></h1>
-        <p>I am a Senior Developer with a history of serving in both front-end and back-end roles that has also, at times, served as a content author and liaison with website clients. As such, I feel that I have a deep sensitivity to the entire spectrum of perspectives of those involved in the full life-cycle of a website. I seek to create web experiences that are not only elegant for users and content authors but also a delight with which to work for fellow developers, based around a rock-solid foundational knowledge of semantic HTML, CSS, and Javascript.</p>
+        <p>I am a Senior Developer with a history of serving in both front-end and back-end roles that has also, at times, served as a content author and liaison with website clients. As such, I feel that I have a <em>deep sensitivity</em> to the entire spectrum of perspectives of those involved in the full life-cycle of a website. I seek to create web experiences that are not only elegant for users and content authors but also a delight with which to work for fellow developers, based around a rock-solid foundational knowledge of semantic HTML, CSS, and Javascript.</p>
 
-        <p>I am a voracious and insatiable learner, constantly searching for increasingly optimal paths and revolutionary insights.</p>
+        <p>I am a <strong>voracious and insatiable learner</strong>, constantly searching for increasingly optimal paths and revolutionary insights.</p>
       </section>
 
       <section className="tr_block tr_block__technology">
@@ -70,6 +70,27 @@ export default ({ data }) => (
       </section>
       <section className="tr_block tr_block__contact">
         <h2>Contact</h2>
+        <section>
+          <p><a href="mailto:patrick@trustfulrobot.com" target="_blank" rel="noopener noreferrer">
+            patrick@trustfulrobot.com
+          </a></p>
+        </section>
+        <section>
+          <p><a href="https://www.instagram.com/frightlab/" target="_blank" rel="noopener noreferrer">
+            Instagram
+          </a></p>
+        </section>
+        <section>
+          <p><a href="https://www.linkedin.com/in/p-morrissey/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a></p>
+        </section>
+        <section>
+          <p><a href="http://patrickmorrissey.com" target="_blank" rel="noopener noreferrer">
+            patrickmorrissey.com
+          </a></p>
+          <p>Musings and rantings.  A blog of sorts.</p>
+        </section>
       </section>
     </main>
   </div>

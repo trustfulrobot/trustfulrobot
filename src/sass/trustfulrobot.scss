@@ -21,7 +21,7 @@
 	font-size: 1em;
 }
 .tr_block__technology {
-	color: $tr_white;
+	color: $tr_black;
 	background-color: $tr_grey_lt;
 	section {
 		margin-bottom: 4em;
@@ -39,6 +39,22 @@
 		h3 {
 			margin-top: 0;
 		}
+	}
+}
+
+.tr_block__contact {
+	section {
+		font-size: 1.25em;
+		margin-bottom: 2em;
+	}
+	p {
+		margin-top: 0;
+		margin-bottom: 0.5em;
+	}
+	a {
+		font-family: 'HalvarMittelschrift';
+	  font-weight: 700;
+	  font-style: normal;
 	}
 }
 
