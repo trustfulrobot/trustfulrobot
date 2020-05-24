@@ -71,30 +71,37 @@ export default ({ data }) => (
       </section>
       <section className="tr_block tr_block__work">
         <h2>Work</h2>
+        <div id="worklist">
+        <ul>
+        <li>list</li>
+        </ul>
+        </div>
       </section>
       <section className="tr_block tr_block__contact">
         <h2>Contact</h2>
-        <section>
-          <p><a href="mailto:patrick@trustfulrobot.com" target="_blank" rel="noopener noreferrer">
-            patrick@trustfulrobot.com
-          </a></p>
-        </section>
-        <section>
-          <p><a href="https://www.instagram.com/frightlab/" target="_blank" rel="noopener noreferrer">
-            Instagram
-          </a></p>
-        </section>
-        <section>
-          <p><a href="https://www.linkedin.com/in/p-morrissey/" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a></p>
-        </section>
-        <section>
-          <p><a href="http://patrickmorrissey.com" target="_blank" rel="noopener noreferrer">
-            patrickmorrissey.com
-          </a></p>
-          <p>Musings and rantings.  A blog of sorts.</p>
-        </section>
+        <div id="linkanting">
+          <section>
+            <p><a href="mailto:patrick@trustfulrobot.com" target="_blank" rel="noopener noreferrer">
+              patrick@trustfulrobot.com
+            </a></p>
+          </section>
+          <section>
+            <p><a href="https://www.instagram.com/frightlab/" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a></p>
+          </section>
+          <section>
+            <p><a href="https://www.linkedin.com/in/p-morrissey/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a></p>
+          </section>
+          <section>
+            <p><a href="http://patrickmorrissey.com" target="_blank" rel="noopener noreferrer">
+              patrickmorrissey.com
+            </a></p>
+            <p>Musings and rantings.  A blog of sorts.</p>
+          </section>
+        </div>
       </section>
     </main>
   </div>

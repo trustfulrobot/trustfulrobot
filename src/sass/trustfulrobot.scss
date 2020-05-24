@@ -10,7 +10,7 @@
 	min-height: 100vh;
 }
 .tr_block {
-	padding: 2rem 2rem 4rem 2rem;
+	padding: 4rem 2rem 4rem 2rem;
 	color: $tr_black;
 	background-color: $tr_white;
 	font-size: 0.8em;
@@ -54,21 +54,23 @@
 
 
 @media all and (min-width: $width_tablet) {
-	// .tr_block {
-	// 	padding: 2rem 3rem 4rem 3rem;
-	// }	
-	// .tr_block__intro {
-	// 	position: relative;
-	// }
-	// .tr_block__work {
-	// 	position: relative;
-	// 	grid-column: 1 / span 2;
-	// }
-	// .tr_block__contact {
-	// 	grid-column: 1 / span 2;
-	// }
-	// #introtext, #techstacks {
-	// 	border: 1px solid red;
-	// 	top: 0;
-	// }
+	.tr_block {
+		padding: 2rem 3rem 4rem 3rem;
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		grid-template-rows: 8rem auto;
+	}	
+	.tr_block__work, .tr_block__contact {
+		grid-column: 1 / -1;
+	}
+	#introtext {
+		p:first-child {
+			margin-top: 0;
+		}
+	}
+	#worklist {
+		ul {
+			margin-top: 0;
+		}
+	}
 }
