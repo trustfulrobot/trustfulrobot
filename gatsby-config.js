@@ -20,6 +20,8 @@ module.exports = {
   },
   `gatsby-plugin-sass`,
   `gatsby-plugin-react-helmet`,
+  `gatsby-transformer-sharp`,
+  `gatsby-plugin-sharp`,
   {
     resolve: `gatsby-plugin-favicon`,
     options: {

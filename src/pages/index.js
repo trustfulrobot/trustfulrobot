@@ -73,11 +73,41 @@ export default ({ data }) => (
         <h2>Work</h2>
         <div id="worklist">
         <ul>
-        <li>Castle & Key Distillery</li>
-        <li>Link-Belt Excavators</li>
-        <li>Bullhorn Creative</li>
-        <li>Granulata</li>
-        <li>Patrick Morrissey</li>
+        <li>
+          <a href="https://castleandkey.com/" target="_blank" rel="noopener noreferrer">
+            <section>
+              <div>Castle & Key Distillery</div>
+            </section>
+          </a>
+        </li>
+        <li>
+          <a href="https://en.lbxco.com/" target="_blank" rel="noopener noreferrer">
+            <section>
+              <div>Link-Belt Excavators</div>
+            </section>
+          </a>
+        </li>
+        <li>
+          <a href="https://bullhorncreative.com/" target="_blank" rel="noopener noreferrer">
+            <section>
+              <div>Bullhorn Creative</div>
+            </section>
+          </a>
+        </li>
+        <li>
+          <a href="https://granulata.com/" target="_blank" rel="noopener noreferrer">
+            <section>
+              <div>Granulata</div>
+            </section>
+          </a>
+        </li>
+        <li>
+          <a href="http://patrickmorrissey.com/" target="_blank" rel="noopener noreferrer">
+            <section>
+              <div>Patrick Morrissey</div>
+            </section>
+          </a>
+        </li>
         </ul>
         </div>
       </section>
