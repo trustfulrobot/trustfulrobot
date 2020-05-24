@@ -48,10 +48,4 @@ ul {
 		display: grid;
 		grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
 	}
-	.tr_block__work {
-		grid-column: 1 / span 2;
-	}
-	.tr_block__contact {
-		grid-column: 1 / span 2;
-	}
 }
