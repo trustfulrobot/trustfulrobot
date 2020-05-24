@@ -8,7 +8,7 @@ body {
 	font-size: 1em;
 }
 main {
-	font-size: calc(1.125em + 0.5vw);
+	font-size: calc(1.125em + 0.6vw);
 }
 h1 {
 	margin-bottom: 3rem;
@@ -24,7 +24,6 @@ h2 {
   font-weight: 700;
   font-style: normal;
 	font-size: 2em;
-  // text-transform: uppercase;
   margin-top: 0.75em;
   margin-bottom: 2em;
   padding-top: 0;
@@ -44,8 +43,10 @@ ul {
 }
 a, a:visited {
 	color: $tr_accent_1;
+	transition: all $easetime $easeout;
 	&:hover {
 		color: $tr_accent_2;
+		transition: all $easetime $easeout;
 	}
 }
 
