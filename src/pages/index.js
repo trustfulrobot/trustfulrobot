@@ -73,8 +73,18 @@ export default ({ data }) => (
         <h2>Work</h2>
         <div id="worklist">
         <ul>
-        <li>list</li>
+        <li>Castle & Key Distillery</li>
+        <li>Link-Belt Excavators</li>
+        <li>Bullhorn Creative</li>
+        <li>Granulata</li>
+        <li>Patrick Morrissey</li>
         </ul>
+        </div>
+      </section>
+      <section className="tr_block tr_block__instagram">
+        <h2>Instagram</h2>
+        <div id="instagramlist">
+          <span>Instgram embed here</span>
         </div>
       </section>
       <section className="tr_block tr_block__contact">

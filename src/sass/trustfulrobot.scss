@@ -35,6 +35,10 @@
 		margin-bottom: 4em;
 	}
 }
+.tr_block__instagram {
+	color: $tr_grey_lt;
+	background-color: $tr_grey_dk;
+}
 
 .tr_block__contact {
 	section {
@@ -60,7 +64,7 @@
 		grid-template-columns: minmax(0, 1fr);
 		grid-template-rows: 8rem auto;
 	}	
-	.tr_block__work, .tr_block__contact {
+	.tr_block__work, .tr_block__instagram, .tr_block__contact {
 		grid-column: 1 / -1;
 	}
 	#introtext {
