@@ -25,9 +25,6 @@
 	background-color: $tr_grey_lt;
 	section {
 		margin-bottom: 4em;
-		h3 {
-			margin-top: 0;
-		}
 	}
 }
 
@@ -36,9 +33,6 @@
 	background-color: $tr_accent_1;
 	section {
 		margin-bottom: 4em;
-		h3 {
-			margin-top: 0;
-		}
 	}
 }
 
@@ -60,13 +54,21 @@
 
 
 @media all and (min-width: $width_tablet) {
-	.tr_block {
-		padding: 2rem 3rem 4rem 3rem;
-	}	
-	.tr_block__work {
-		grid-column: 1 / span 2;
-	}
-	.tr_block__contact {
-		grid-column: 1 / span 2;
-	}
+	// .tr_block {
+	// 	padding: 2rem 3rem 4rem 3rem;
+	// }	
+	// .tr_block__intro {
+	// 	position: relative;
+	// }
+	// .tr_block__work {
+	// 	position: relative;
+	// 	grid-column: 1 / span 2;
+	// }
+	// .tr_block__contact {
+	// 	grid-column: 1 / span 2;
+	// }
+	// #introtext, #techstacks {
+	// 	border: 1px solid red;
+	// 	top: 0;
+	// }
 }

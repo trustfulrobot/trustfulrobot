@@ -11,6 +11,7 @@ main {
 	font-size: calc(1.125em + 0.6vw);
 }
 h1 {
+	margin-top: 0;
 	margin-bottom: 3rem;
 	padding-bottom: 0;
 	img {
@@ -24,7 +25,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
 	font-size: 2em;
-  margin-top: 0.75em;
+	margin-top: 0;
   margin-bottom: 2em;
   padding-top: 0;
 }
