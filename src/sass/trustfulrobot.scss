@@ -19,6 +19,9 @@
 
 .tr_block__intro {
 	font-size: 1em;
+	#introtext {
+		max-width: 30em;
+	}
 }
 .tr_block__technology {
 	color: $tr_black;
@@ -34,13 +37,20 @@
 	section {
 		margin-bottom: 4em;
 		display: grid;
-		grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+		grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 		grid-gap: 2rem;
-		font-size: 1.125em;
 		line-height: 1.3;
+	}
+	.workdetails {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr);
+		grid-gap: 1em;
 	}
 	a, a:visited {
 		color: $tr_white;
+		&:hover {
+			color: $tr_accent_2;
+		}
 	}
 	h4 {
 		margin-top: 0;
@@ -93,6 +103,11 @@
 			margin-top: 0;
 		}
 	}
+	.tr_block__work {
+		section {
+			font-size: 1.125em;
+		}
+	}
 	#worklist {
 		ul {
 			margin-top: 0;
@@ -109,8 +124,32 @@
 	#worklist {
 		ul {
 			display: grid;
-			grid-template-columns: repeat(4, minmax(0, 1fr));
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 			grid-gap: 4rem;
+		}
+	}
+}
+
+@media all and (min-width: 1440px) {
+	.tr_block__work {
+		section {
+			font-size: 1em;
+		}
+	}
+	.tr_block__technology {
+		padding: 2rem 6rem 4rem 6rem;
+	}	
+	#worklist {
+		ul {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
+}
+
+@media all and (min-width: 1800px) {
+	#worklist {
+		ul {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
 		}
 	}
 }

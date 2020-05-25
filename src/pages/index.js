@@ -212,50 +212,60 @@ function HomePage({ data }) {
           <li>
             <section>
               <Img fluid={castleandkey_sources} />
-              <div>
-                <h4>Castle & Key Distillery</h4>
-                <p>Fully-custom <strong>Shopify</strong> development</p>
-                <p><a href="https://castleandkey.com/" target="_blank" rel="noopener noreferrer">castleandkey.com</a></p>
+              <div className="workdetails__wrapper">
+                <div className="workdetails">
+                  <h4>Castle & Key Distillery</h4>
+                  <p>Fully-custom <strong>Shopify</strong> development</p>
+                  <div className="linkwrapper"><a href="https://castleandkey.com/" target="_blank" rel="noopener noreferrer">castleandkey.com</a></div>
+                </div>
               </div>
             </section>
           </li>
           <li>
             <section>
               <Img fluid={lbx_sources} />
-              <div>
-                <h4>Link-Belt Excavators</h4>
-                <p>Fully-custom <strong>WordPress</strong> development with personalized content builder</p>
-                <p><a href="https://en.lbxco.com/" target="_blank" rel="noopener noreferrer">en.lbxco.com</a></p>
+              <div className="workdetails__wrapper">
+                <div className="workdetails">
+                  <h4>Link-Belt Excavators</h4>
+                  <p>Fully-custom <strong>WordPress</strong> development with personalized content builder</p>
+                  <div className="linkwrapper"><a href="https://en.lbxco.com/" target="_blank" rel="noopener noreferrer">en.lbxco.com</a></div>
+                </div>
               </div>
             </section>
           </li>
           <li>
             <section>
               <Img fluid={bullhorn_sources} />
-              <div>
-                <h4>Bullhorn Creative</h4>
-                <p>Fully-custom <strong>WordPress</strong> development with personalized content builder</p>
-                <p><a href="https://bullhorncreative.com/" target="_blank" rel="noopener noreferrer">bullhorncreative.com</a></p>
+              <div className="workdetails__wrapper">
+                <div className="workdetails">
+                  <h4>Bullhorn Creative</h4>
+                  <p>Fully-custom <strong>WordPress</strong> development with personalized content builder</p>
+                  <div className="linkwrapper"><a href="https://bullhorncreative.com/" target="_blank" rel="noopener noreferrer">bullhorncreative.com</a></div>
+                </div>
               </div>
             </section>
           </li>
           <li>
             <section>
               <Img fluid={granulata_sources} />
-              <div>
-                <h4>Granulata</h4>
-                <p>Website to accompany exhibit at <strong>The 2020 Music, Art, and Technology Fair</strong> at Georgia Tech</p>
-                <p><a href="https://granulata.com/" target="_blank" rel="noopener noreferrer">granulata.com</a></p>
+              <div className="workdetails__wrapper">
+                <div className="workdetails">
+                  <h4>Granulata</h4>
+                  <p>Website to accompany exhibit at <strong>The 2020 Music, Art, and Technology Fair</strong> at Georgia Tech</p>
+                  <div className="linkwrapper"><a href="https://granulata.com/" target="_blank" rel="noopener noreferrer">granulata.com</a></div>
+                </div>
               </div>
             </section>
           </li>
           <li>
             <section>
               <Img fluid={patrickmorrissey_sources} />
-              <div>
-                <h4>Patrick Morrissey</h4>
-                <p>Personal website with rantings, ravings, and reality tests</p>
-                <p><a href="http://patrickmorrissey.com/" target="_blank" rel="noopener noreferrer">patrickmorrissey.com</a></p>
+              <div className="workdetails__wrapper">
+                <div className="workdetails">
+                  <h4>Patrick Morrissey</h4>
+                  <p>Personal website with rantings, ravings, and reality tests</p>
+                  <div className="linkwrapper"><a href="http://patrickmorrissey.com/" target="_blank" rel="noopener noreferrer">patrickmorrissey.com</a></div>
+                </div>
               </div>
             </section>
           </li>
