@@ -50,6 +50,12 @@ module.exports = {
       name: `images`,
       path: `${__dirname}/static/images/`,
     },
+  },
+  {
+    resolve: `gatsby-source-instagram`,
+    options: {
+      username: `frightlab`,
+    },
   }
   ]
 }

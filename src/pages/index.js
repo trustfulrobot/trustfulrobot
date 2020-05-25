@@ -92,6 +92,21 @@ export const SiteMetadata = graphql`
         ...GatsbyImageSharpFluid_withWebp
       }
     }
+    allInstagram: allInstaNode(sort: {fields: timestamp, order: DESC}) {
+      instagram_post: nodes {
+        id
+        caption
+        original
+        timestamp
+        localFile {
+          childImageSharp {
+            fluid(maxWidth: 6000, duotone: { highlight: "#DADCDB", shadow: "#536273" }){
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
   }
 `
 
@@ -153,6 +168,23 @@ function HomePage({ data }) {
       media: `(min-width: 768px)`,
     },
   ];
+  
+
+  // const allInstagram = data.allInstagram;
+  // console.log(allInstagram);
+  const allInstagramDOM = data.allInstagram.instagram_post.map(function(instagram_post, index){
+    const ig_post__timestamp = instagram_post.timestamp;
+    const ig_post__original = instagram_post.original;
+    const postDate = new Date(ig_post__timestamp * 1000);
+    const formattedDate = postDate.toDateString();
+    return (
+      <li key={index}>
+        {formattedDate}
+      </li>
+    )
+  })
+  console.log(data.allInstagram.instagram_post);
+
   return (
     <div className="container">
       <Helmet defer={false} defaultTitle={data.site.siteMetadata.title} titleTemplate={`%s | ${data.site.siteMetadata.title}`}>
@@ -175,7 +207,7 @@ function HomePage({ data }) {
         <section className="tr_block tr_block__intro">
           <h1><img src={`${svg_logo}`} alt="Trustful Robot | Digital Shamanism" /></h1>
           <div id="introtext">
-            <p>I am a Senior Developer with a 20-year history of providing services across the full stack who has also, at times, served as a content author as well as a liaison with website clients. As such, I feel that I have a <em>deep sensitivity</em> to the entire spectrum of perspectives of those involved in the full life-cycle of a website.</p>
+            <p>I am a Senior Developer with a 20-year history of providing services across the full stack who has also, at times, served as a content author as well as a liaison with website clients. As such, I feel that I have a <em>deep sensitivity</em> to the entire spectrum of perspectives of those involved in the complete life-cycle of a website.</p>
 
             <p>I seek to create web experiences that are not only elegant for users and content authors but also a delight with which to work for fellow developers, based on a rock-solid foundational knowledge of semantic HTML, CSS, and Javascript.</p>
 
@@ -275,7 +307,9 @@ function HomePage({ data }) {
         <section className="tr_block tr_block__instagram">
           <h2>Instagram</h2>
           <div id="instagramlist">
-            <span>Instgram embed here</span>
+            <ul>
+              {allInstagramDOM}
+            </ul>
           </div>
         </section>
         <section className="tr_block tr_block__contact">
