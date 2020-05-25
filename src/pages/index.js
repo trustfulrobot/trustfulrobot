@@ -171,20 +171,20 @@ function HomePage({ data }) {
   ];
   
 
-  // const allInstagram = data.allInstagram;
-  // console.log(allInstagram);
   const allInstagramDOM = data.allInstagram.instagram_post.map(function(instagram_post, index){
     const ig_post__timestamp = instagram_post.timestamp;
-    const ig_post__original = instagram_post.original;
+    const igImage = instagram_post.localFile.childImageSharp.fluid;
     const postDate = new Date(ig_post__timestamp * 1000);
-    const formattedDate = postDate.toString();
+    const formattedDate = format(postDate, 'dd. MMMM yyy');
     return (
       <li key={index}>
-        {formattedDate}
+        <a href="#" target="_blank" rel="noopener noreferrer">
+          <Img fluid={igImage} />
+        </a>
+        <div>{formattedDate}</div>
       </li>
     )
   })
-  console.log(data.allInstagram.instagram_post);
 
   return (
     <div className="container">
