@@ -101,56 +101,56 @@ function HomePage({ data }) {
   const bullhorn_sources = [
     data.bullhorn_phone.fluid,
     {
-      ...data.bullhorn_tablet.fluid,
-      media: `(min-width: 768px)`,
-    },
-    {
       ...data.bullhorn_desktop.fluid,
       media: `(min-width: 992px)`,
+    },
+    {
+      ...data.bullhorn_tablet.fluid,
+      media: `(min-width: 768px)`,
     },
   ];
   const castleandkey_sources = [
     data.castleandkey_phone.fluid,
     {
-      ...data.castleandkey_tablet.fluid,
-      media: `(min-width: 768px)`,
-    },
-    {
       ...data.castleandkey_desktop.fluid,
       media: `(min-width: 992px)`,
+    },
+    {
+      ...data.castleandkey_tablet.fluid,
+      media: `(min-width: 768px)`,
     },
   ];
   const granulata_sources = [
     data.granulata_phone.fluid,
     {
-      ...data.granulata_tablet.fluid,
-      media: `(min-width: 768px)`,
-    },
-    {
       ...data.granulata_desktop.fluid,
       media: `(min-width: 992px)`,
+    },
+    {
+      ...data.granulata_tablet.fluid,
+      media: `(min-width: 768px)`,
     },
   ];
   const lbx_sources = [
     data.lbx_phone.fluid,
     {
-      ...data.lbx_tablet.fluid,
-      media: `(min-width: 768px)`,
-    },
-    {
       ...data.lbx_desktop.fluid,
       media: `(min-width: 992px)`,
+    },
+    {
+      ...data.lbx_tablet.fluid,
+      media: `(min-width: 768px)`,
     },
   ];
   const patrickmorrissey_sources = [
     data.patrickmorrissey_phone.fluid,
     {
-      ...data.patrickmorrissey_tablet.fluid,
-      media: `(min-width: 768px)`,
-    },
-    {
       ...data.patrickmorrissey_desktop.fluid,
       media: `(min-width: 992px)`,
+    },
+    {
+      ...data.patrickmorrissey_tablet.fluid,
+      media: `(min-width: 768px)`,
     },
   ];
   return (
@@ -175,7 +175,9 @@ function HomePage({ data }) {
         <section className="tr_block tr_block__intro">
           <h1><img src={`${svg_logo}`} alt="Trustful Robot | Digital Shamanism" /></h1>
           <div id="introtext">
-            <p>I am a Senior Developer with a history of serving in both front-end and back-end roles that has also, at times, served as a content author and liaison with website clients. As such, I feel that I have a <em>deep sensitivity</em> to the entire spectrum of perspectives of those involved in the full life-cycle of a website. I seek to create web experiences that are not only elegant for users and content authors but also a delight with which to work for fellow developers, based around a rock-solid foundational knowledge of semantic HTML, CSS, and Javascript.</p>
+            <p>I am a Senior Developer with a 20-year history of providing services across the full stack who has also, at times, served as a content author as well as a liaison with website clients. As such, I feel that I have a <em>deep sensitivity</em> to the entire spectrum of perspectives of those involved in the full life-cycle of a website.</p>
+
+            <p>I seek to create web experiences that are not only elegant for users and content authors but also a delight with which to work for fellow developers, based on a rock-solid foundational knowledge of semantic HTML, CSS, and Javascript.</p>
 
             <p>I am a <strong>voracious and insatiable learner</strong>, constantly searching for increasingly optimal paths and revolutionary insights.</p>
           </div>
