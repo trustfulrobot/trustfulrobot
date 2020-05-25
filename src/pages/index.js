@@ -2,6 +2,7 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import { format } from "date-fns"
 import "../sass/trustfulrobot.scss"
 import svg_logo from "../../static/images/TrustfulRobot_DigitalShamanism.svg"
 
@@ -176,7 +177,7 @@ function HomePage({ data }) {
     const ig_post__timestamp = instagram_post.timestamp;
     const ig_post__original = instagram_post.original;
     const postDate = new Date(ig_post__timestamp * 1000);
-    const formattedDate = postDate.toDateString();
+    const formattedDate = postDate.toString();
     return (
       <li key={index}>
         {formattedDate}
