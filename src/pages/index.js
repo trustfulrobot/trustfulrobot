@@ -22,12 +22,84 @@ export const SiteMetadata = graphql`
         node {
           id
           fluid {
-            srcWebp
-            srcSetWebp
-            originalImg
-            originalName
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
+      }
+    }
+    bullhorn_phone: imageSharp(fluid: {originalName: {eq: "bullhorn_phone.jpg"}}) {
+      fluid(maxWidth: 768) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    bullhorn_tablet: imageSharp(fluid: {originalName: {eq: "bullhorn_tablet.jpg"}}) {
+      fluid(maxWidth: 992) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    bullhorn_desktop: imageSharp(fluid: {originalName: {eq: "bullhorn_desktop.jpg"}}) {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    castleandkey_phone: imageSharp(fluid: {originalName: {eq: "castleandkey_phone.jpg"}}) {
+      fluid(maxWidth: 768) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    castleandkey_tablet: imageSharp(fluid: {originalName: {eq: "castleandkey_tablet.jpg"}}) {
+      fluid(maxWidth: 992) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    castleandkey_desktop: imageSharp(fluid: {originalName: {eq: "castleandkey_desktop.jpg"}}) {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    granulata_phone: imageSharp(fluid: {originalName: {eq: "granulata_phone.jpg"}}) {
+      fluid(maxWidth: 768) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    granulata_tablet: imageSharp(fluid: {originalName: {eq: "granulata_tablet.jpg"}}) {
+      fluid(maxWidth: 992) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    granulata_desktop: imageSharp(fluid: {originalName: {eq: "granulata_desktop.jpg"}}) {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    lbx_phone: imageSharp(fluid: {originalName: {eq: "lbx_phone.jpg"}}) {
+      fluid(maxWidth: 768) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    lbx_tablet: imageSharp(fluid: {originalName: {eq: "lbx_tablet.jpg"}}) {
+      fluid(maxWidth: 992) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    lbx_desktop: imageSharp(fluid: {originalName: {eq: "lbx_desktop.jpg"}}) {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    patrickmorrissey_phone: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_phone.jpg"}}) {
+      fluid(maxWidth: 768) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    patrickmorrissey_tablet: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_tablet.jpg"}}) {
+      fluid(maxWidth: 992) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    patrickmorrissey_desktop: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_desktop.jpg"}}) {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid_withWebp
       }
     }
   }
@@ -36,6 +108,61 @@ export const SiteMetadata = graphql`
 
 
 function HomePage({ data }) {
+  const bullhorn_sources = [
+    data.bullhorn_phone.fluid,
+    {
+      ...data.bullhorn_tablet.fluid,
+      media: `(min-width: 768px)`,
+    },
+    {
+      ...data.bullhorn_desktop.fluid,
+      media: `(min-width: 992px)`,
+    },
+  ];
+  const castleandkey_sources = [
+    data.castleandkey_phone.fluid,
+    {
+      ...data.castleandkey_tablet.fluid,
+      media: `(min-width: 768px)`,
+    },
+    {
+      ...data.castleandkey_desktop.fluid,
+      media: `(min-width: 992px)`,
+    },
+  ];
+  const granulata_sources = [
+    data.granulata_phone.fluid,
+    {
+      ...data.granulata_tablet.fluid,
+      media: `(min-width: 768px)`,
+    },
+    {
+      ...data.granulata_desktop.fluid,
+      media: `(min-width: 992px)`,
+    },
+  ];
+  const lbx_sources = [
+    data.lbx_phone.fluid,
+    {
+      ...data.lbx_tablet.fluid,
+      media: `(min-width: 768px)`,
+    },
+    {
+      ...data.lbx_desktop.fluid,
+      media: `(min-width: 992px)`,
+    },
+  ];
+  const patrickmorrissey_sources = [
+    data.patrickmorrissey_phone.fluid,
+    {
+      ...data.patrickmorrissey_tablet.fluid,
+      media: `(min-width: 768px)`,
+    },
+    {
+      ...data.patrickmorrissey_desktop.fluid,
+      media: `(min-width: 992px)`,
+    },
+  ];
   return (
     <div className="container">
       <Helmet defer={false} defaultTitle={data.site.siteMetadata.title} titleTemplate={`%s | ${data.site.siteMetadata.title}`}>
@@ -93,35 +220,55 @@ function HomePage({ data }) {
           <li>
             <a href="https://castleandkey.com/" target="_blank" rel="noopener noreferrer">
               <section>
-                <div>Castle & Key Distillery</div>
+                <Img fluid={castleandkey_sources} />
+                <div>
+                  <h4>Castle & Key Distillery</h4>
+                  <p>Fully-custom <strong>Shopify</strong> development</p>
+                </div>
               </section>
             </a>
           </li>
           <li>
             <a href="https://en.lbxco.com/" target="_blank" rel="noopener noreferrer">
               <section>
-                <div>Link-Belt Excavators</div>
+                <Img fluid={lbx_sources} />
+                <div>
+                  <h4>Link-Belt Excavators</h4>
+                  <p>Fully-custom <strong>WordPress</strong> development with personalized content builder</p>
+                </div>
               </section>
             </a>
           </li>
           <li>
             <a href="https://bullhorncreative.com/" target="_blank" rel="noopener noreferrer">
               <section>
-                <div>Bullhorn Creative</div>
+                <Img fluid={bullhorn_sources} />
+                <div>
+                  <h4>Bullhorn Creative</h4>
+                  <p>Fully-custom <strong>WordPress</strong> development with personalized content builder</p>
+                </div>
               </section>
             </a>
           </li>
           <li>
             <a href="https://granulata.com/" target="_blank" rel="noopener noreferrer">
               <section>
-                <div>Granulata</div>
+                <Img fluid={granulata_sources} />
+                <div>
+                  <h4>Granulata</h4>
+                  <p>Website to accompany exhibit at <strong>The 2020 Music, Art, and Technology Fair</strong> at Georgia Tech</p>
+                </div>
               </section>
             </a>
           </li>
           <li>
             <a href="http://patrickmorrissey.com/" target="_blank" rel="noopener noreferrer">
               <section>
-                <div>Patrick Morrissey</div>
+                <div>
+                  <Img fluid={patrickmorrissey_sources} />
+                  <h4>Patrick Morrissey</h4>
+                  <p>Personal website with rantings, ravings, and reality tests</p>
+                </div>
               </section>
             </a>
           </li>
