@@ -17,88 +17,78 @@ export const SiteMetadata = graphql`
         description
       }
     }
-    allImageSharp {
-      edges {
-        node {
-          id
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
     bullhorn_phone: imageSharp(fluid: {originalName: {eq: "bullhorn_phone.jpg"}}) {
-      fluid(maxWidth: 768) {
+      fluid(maxWidth: 768, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     bullhorn_tablet: imageSharp(fluid: {originalName: {eq: "bullhorn_tablet.jpg"}}) {
-      fluid(maxWidth: 992) {
+      fluid(maxWidth: 992, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     bullhorn_desktop: imageSharp(fluid: {originalName: {eq: "bullhorn_desktop.jpg"}}) {
-      fluid(maxWidth: 2000) {
+      fluid(maxWidth: 2000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     castleandkey_phone: imageSharp(fluid: {originalName: {eq: "castleandkey_phone.jpg"}}) {
-      fluid(maxWidth: 768) {
+      fluid(maxWidth: 768, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     castleandkey_tablet: imageSharp(fluid: {originalName: {eq: "castleandkey_tablet.jpg"}}) {
-      fluid(maxWidth: 992) {
+      fluid(maxWidth: 992, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     castleandkey_desktop: imageSharp(fluid: {originalName: {eq: "castleandkey_desktop.jpg"}}) {
-      fluid(maxWidth: 2000) {
+      fluid(maxWidth: 2000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     granulata_phone: imageSharp(fluid: {originalName: {eq: "granulata_phone.jpg"}}) {
-      fluid(maxWidth: 768) {
+      fluid(maxWidth: 768, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     granulata_tablet: imageSharp(fluid: {originalName: {eq: "granulata_tablet.jpg"}}) {
-      fluid(maxWidth: 992) {
+      fluid(maxWidth: 992, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     granulata_desktop: imageSharp(fluid: {originalName: {eq: "granulata_desktop.jpg"}}) {
-      fluid(maxWidth: 2000) {
+      fluid(maxWidth: 2000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     lbx_phone: imageSharp(fluid: {originalName: {eq: "lbx_phone.jpg"}}) {
-      fluid(maxWidth: 768) {
+      fluid(maxWidth: 768, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     lbx_tablet: imageSharp(fluid: {originalName: {eq: "lbx_tablet.jpg"}}) {
-      fluid(maxWidth: 992) {
+      fluid(maxWidth: 992, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     lbx_desktop: imageSharp(fluid: {originalName: {eq: "lbx_desktop.jpg"}}) {
-      fluid(maxWidth: 2000) {
+      fluid(maxWidth: 2000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     patrickmorrissey_phone: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_phone.jpg"}}) {
-      fluid(maxWidth: 768) {
+      fluid(maxWidth: 768, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     patrickmorrissey_tablet: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_tablet.jpg"}}) {
-      fluid(maxWidth: 992) {
+      fluid(maxWidth: 992, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     patrickmorrissey_desktop: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_desktop.jpg"}}) {
-      fluid(maxWidth: 2000) {
+      fluid(maxWidth: 2000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -218,59 +208,54 @@ function HomePage({ data }) {
           <div id="worklist">
           <ul>
           <li>
-            <a href="https://castleandkey.com/" target="_blank" rel="noopener noreferrer">
-              <section>
-                <Img fluid={castleandkey_sources} />
-                <div>
-                  <h4>Castle & Key Distillery</h4>
-                  <p>Fully-custom <strong>Shopify</strong> development</p>
-                </div>
-              </section>
-            </a>
+            <section>
+              <Img fluid={castleandkey_sources} />
+              <div>
+                <h4>Castle & Key Distillery</h4>
+                <p>Fully-custom <strong>Shopify</strong> development</p>
+                <p><a href="https://castleandkey.com/" target="_blank" rel="noopener noreferrer">castleandkey.com</a></p>
+              </div>
+            </section>
           </li>
           <li>
-            <a href="https://en.lbxco.com/" target="_blank" rel="noopener noreferrer">
-              <section>
-                <Img fluid={lbx_sources} />
-                <div>
-                  <h4>Link-Belt Excavators</h4>
-                  <p>Fully-custom <strong>WordPress</strong> development with personalized content builder</p>
-                </div>
-              </section>
-            </a>
+            <section>
+              <Img fluid={lbx_sources} />
+              <div>
+                <h4>Link-Belt Excavators</h4>
+                <p>Fully-custom <strong>WordPress</strong> development with personalized content builder</p>
+                <p><a href="https://en.lbxco.com/" target="_blank" rel="noopener noreferrer">en.lbxco.com</a></p>
+              </div>
+            </section>
           </li>
           <li>
-            <a href="https://bullhorncreative.com/" target="_blank" rel="noopener noreferrer">
-              <section>
-                <Img fluid={bullhorn_sources} />
-                <div>
-                  <h4>Bullhorn Creative</h4>
-                  <p>Fully-custom <strong>WordPress</strong> development with personalized content builder</p>
-                </div>
-              </section>
-            </a>
+            <section>
+              <Img fluid={bullhorn_sources} />
+              <div>
+                <h4>Bullhorn Creative</h4>
+                <p>Fully-custom <strong>WordPress</strong> development with personalized content builder</p>
+                <p><a href="https://bullhorncreative.com/" target="_blank" rel="noopener noreferrer">bullhorncreative.com</a></p>
+              </div>
+            </section>
           </li>
           <li>
-            <a href="https://granulata.com/" target="_blank" rel="noopener noreferrer">
-              <section>
-                <Img fluid={granulata_sources} />
-                <div>
-                  <h4>Granulata</h4>
-                  <p>Website to accompany exhibit at <strong>The 2020 Music, Art, and Technology Fair</strong> at Georgia Tech</p>
-                </div>
-              </section>
-            </a>
+            <section>
+              <Img fluid={granulata_sources} />
+              <div>
+                <h4>Granulata</h4>
+                <p>Website to accompany exhibit at <strong>The 2020 Music, Art, and Technology Fair</strong> at Georgia Tech</p>
+                <p><a href="https://granulata.com/" target="_blank" rel="noopener noreferrer">granulata.com</a></p>
+              </div>
+            </section>
           </li>
           <li>
-            <a href="http://patrickmorrissey.com/" target="_blank" rel="noopener noreferrer">
-              <section>
-                <div>
-                  <Img fluid={patrickmorrissey_sources} />
-                  <h4>Patrick Morrissey</h4>
-                  <p>Personal website with rantings, ravings, and reality tests</p>
-                </div>
-              </section>
-            </a>
+            <section>
+              <Img fluid={patrickmorrissey_sources} />
+              <div>
+                <h4>Patrick Morrissey</h4>
+                <p>Personal website with rantings, ravings, and reality tests</p>
+                <p><a href="http://patrickmorrissey.com/" target="_blank" rel="noopener noreferrer">patrickmorrissey.com</a></p>
+              </div>
+            </section>
           </li>
           </ul>
           </div>
