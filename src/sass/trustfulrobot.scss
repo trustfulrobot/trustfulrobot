@@ -68,6 +68,29 @@
 	background-color: $tr_grey_dk;
 }
 
+.tr_block__instagram {
+	ul {
+		list-style: none;
+		padding-left: 0;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-gap: 2rem;
+	}
+	.ig-post-date {
+		margin-top: 1rem;
+		font-size: 0.75em;
+	}
+	.ig-account-link {
+		margin-top: 4em;
+		a, a:visited {			
+			font-family: 'HalvarMittelschrift';
+		  font-weight: 700;
+		  font-style: normal;
+		  color: $tr_white;
+		}
+	}
+}
+
 .tr_block__contact {
 	section {
 		font-size: 1.25em;
@@ -113,6 +136,11 @@
 			margin-top: 0;
 		}
 	}
+	.tr_block__instagram {
+		ul {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+	}
 }
 
 @media all and (min-width: $width_desktop_1) {
@@ -125,6 +153,11 @@
 		ul {
 			display: grid;
 			grid-template-columns: repeat(2, minmax(0, 1fr));
+			grid-gap: 4rem;
+		}
+	}
+	.tr_block__instagram {
+		ul {
 			grid-gap: 4rem;
 		}
 	}
@@ -144,12 +177,22 @@
 			grid-template-columns: repeat(3, minmax(0, 1fr));
 		}
 	}
+	.tr_block__instagram {
+		ul {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+	}
 }
 
 @media all and (min-width: 1800px) {
 	#worklist {
 		ul {
 			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
+	}
+	.tr_block__instagram {
+		ul {
+			grid-template-columns: repeat(6, minmax(0, 1fr));
 		}
 	}
 }

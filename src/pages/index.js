@@ -101,7 +101,7 @@ export const SiteMetadata = graphql`
         timestamp
         localFile {
           childImageSharp {
-            fluid(maxWidth: 6000, duotone: { highlight: "#DADCDB", shadow: "#536273" }){
+            fluid(maxWidth: 600, duotone: { highlight: "#DADCDB", shadow: "#536273" }){
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -176,12 +176,13 @@ function HomePage({ data }) {
     const igImage = instagram_post.localFile.childImageSharp.fluid;
     const postDate = new Date(ig_post__timestamp * 1000);
     const formattedDate = format(postDate, 'dd. MMMM yyy');
+    const igPostURL = "https://instagram.com/p/" + instagram_post.id;
     return (
       <li key={index}>
-        <a href="#" target="_blank" rel="noopener noreferrer">
+        <a href={igPostURL} target="_blank" rel="noopener noreferrer">
           <Img fluid={igImage} />
         </a>
-        <div>{formattedDate}</div>
+        <div className="ig-post-date">{formattedDate}</div>
       </li>
     )
   })
@@ -311,6 +312,7 @@ function HomePage({ data }) {
             <ul>
               {allInstagramDOM}
             </ul>
+            <p className="ig-account-link">See all: <a href="https://www.instagram.com/frightlab/" target="_blank" rel="noopener noreferrer">instagram.com/frightlab</a></p>
           </div>
         </section>
         <section className="tr_block tr_block__contact">
