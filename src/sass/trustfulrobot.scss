@@ -41,6 +41,12 @@
 		grid-gap: 2rem;
 		line-height: 1.3;
 	}
+	.workimage__wrapper {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
 	.workdetails {
 		display: grid;
 		grid-template-columns: minmax(0, 1fr);
