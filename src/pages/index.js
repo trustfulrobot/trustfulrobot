@@ -180,7 +180,9 @@ function HomePage({ data }) {
     return (
       <li key={index}>
         <a href={igPostURL} target="_blank" rel="noopener noreferrer">
-          <Img fluid={igImage} />
+          <Img 
+            fluid={igImage}
+          />
         </a>
         <div className="ig-post-date">{formattedDate}</div>
       </li>
