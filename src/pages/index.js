@@ -171,7 +171,6 @@ function HomePage({ data }) {
     },
   ];
 
-  console.log(data.site.siteMetadata);
   
 
   const allInstagramDOM = data.allInstagram.instagram_post.map(function(instagram_post, index){
@@ -206,7 +205,7 @@ function HomePage({ data }) {
         <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={data.site.siteMetadata.title} />
-        <meta property="og:image" content={`${social_graph_img}`} />
+        <meta property="og:image" content={`${data.site.siteMetadata.siteUrl}`/`${social_graph_img}`} />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="https://twitter.com/frightlab" />
