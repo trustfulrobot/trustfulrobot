@@ -245,9 +245,7 @@ function HomePage({ data }) {
           <ul>
           <li>
             <section>
-              <div className="workimage__wrapper">
-                <Img fluid={castleandkey_sources} />
-              </div>
+              <Img fluid={castleandkey_sources} />
               <div className="workdetails__wrapper">
                 <div className="workdetails">
                   <h4>Castle & Key Distillery</h4>
@@ -259,9 +257,7 @@ function HomePage({ data }) {
           </li>
           <li>
             <section>
-              <div className="workimage__wrapper">
-                <Img fluid={lbx_sources} />
-              </div>
+              <Img fluid={lbx_sources} />
               <div className="workdetails__wrapper">
                 <div className="workdetails">
                   <h4>Link-Belt Excavators</h4>
@@ -273,9 +269,7 @@ function HomePage({ data }) {
           </li>
           <li>
             <section>
-              <div className="workimage__wrapper">
-                <Img fluid={bullhorn_sources} />
-              </div>
+              <Img fluid={bullhorn_sources} />
               <div className="workdetails__wrapper">
                 <div className="workdetails">
                   <h4>Bullhorn Creative</h4>
@@ -287,9 +281,7 @@ function HomePage({ data }) {
           </li>
           <li>
             <section>
-              <div className="workimage__wrapper">
-                <Img fluid={granulata_sources} />
-              </div>
+              <Img fluid={granulata_sources} />
               <div className="workdetails__wrapper">
                 <div className="workdetails">
                   <h4>Granulata</h4>
@@ -301,9 +293,7 @@ function HomePage({ data }) {
           </li>
           <li>
             <section>
-              <div className="workimage__wrapper">
-                <Img fluid={patrickmorrissey_sources} />
-              </div>
+              <Img fluid={patrickmorrissey_sources} />
               <div className="workdetails__wrapper">
                 <div className="workdetails">
                   <h4>Patrick Morrissey</h4>
