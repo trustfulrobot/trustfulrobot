@@ -24,7 +24,7 @@ export const SiteMetadata = graphql`
       }
     }
     bullhorn_tablet: imageSharp(fluid: {originalName: {eq: "bullhorn_tablet.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -39,7 +39,7 @@ export const SiteMetadata = graphql`
       }
     }
     castleandkey_tablet: imageSharp(fluid: {originalName: {eq: "castleandkey_tablet.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -54,7 +54,7 @@ export const SiteMetadata = graphql`
       }
     }
     granulata_tablet: imageSharp(fluid: {originalName: {eq: "granulata_tablet.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -69,7 +69,7 @@ export const SiteMetadata = graphql`
       }
     }
     lbx_tablet: imageSharp(fluid: {originalName: {eq: "lbx_tablet.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -84,7 +84,7 @@ export const SiteMetadata = graphql`
       }
     }
     patrickmorrissey_tablet: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_tablet.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
