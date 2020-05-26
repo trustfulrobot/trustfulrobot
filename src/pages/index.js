@@ -19,12 +19,12 @@ export const SiteMetadata = graphql`
       }
     }
     bullhorn_phone: imageSharp(fluid: {originalName: {eq: "bullhorn_phone.jpg"}}) {
-      fluid(maxWidth: 768, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     bullhorn_tablet: imageSharp(fluid: {originalName: {eq: "bullhorn_tablet.jpg"}}) {
-      fluid(maxWidth: 992, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -34,12 +34,12 @@ export const SiteMetadata = graphql`
       }
     }
     castleandkey_phone: imageSharp(fluid: {originalName: {eq: "castleandkey_phone.jpg"}}) {
-      fluid(maxWidth: 768, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     castleandkey_tablet: imageSharp(fluid: {originalName: {eq: "castleandkey_tablet.jpg"}}) {
-      fluid(maxWidth: 992, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -49,12 +49,12 @@ export const SiteMetadata = graphql`
       }
     }
     granulata_phone: imageSharp(fluid: {originalName: {eq: "granulata_phone.jpg"}}) {
-      fluid(maxWidth: 768, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     granulata_tablet: imageSharp(fluid: {originalName: {eq: "granulata_tablet.jpg"}}) {
-      fluid(maxWidth: 992, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -64,12 +64,12 @@ export const SiteMetadata = graphql`
       }
     }
     lbx_phone: imageSharp(fluid: {originalName: {eq: "lbx_phone.jpg"}}) {
-      fluid(maxWidth: 768, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     lbx_tablet: imageSharp(fluid: {originalName: {eq: "lbx_tablet.jpg"}}) {
-      fluid(maxWidth: 992, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -79,12 +79,12 @@ export const SiteMetadata = graphql`
       }
     }
     patrickmorrissey_phone: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_phone.jpg"}}) {
-      fluid(maxWidth: 768, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     patrickmorrissey_tablet: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_tablet.jpg"}}) {
-      fluid(maxWidth: 992, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -245,7 +245,9 @@ function HomePage({ data }) {
           <ul>
           <li>
             <section>
-              <Img fluid={castleandkey_sources} />
+              <div className="workimage__wrapper">
+                <Img fluid={castleandkey_sources} />
+              </div>
               <div className="workdetails__wrapper">
                 <div className="workdetails">
                   <h4>Castle & Key Distillery</h4>
@@ -257,7 +259,9 @@ function HomePage({ data }) {
           </li>
           <li>
             <section>
-              <Img fluid={lbx_sources} />
+              <div className="workimage__wrapper">
+                <Img fluid={lbx_sources} />
+              </div>
               <div className="workdetails__wrapper">
                 <div className="workdetails">
                   <h4>Link-Belt Excavators</h4>
@@ -269,7 +273,9 @@ function HomePage({ data }) {
           </li>
           <li>
             <section>
-              <Img fluid={bullhorn_sources} />
+              <div className="workimage__wrapper">
+                <Img fluid={bullhorn_sources} />
+              </div>
               <div className="workdetails__wrapper">
                 <div className="workdetails">
                   <h4>Bullhorn Creative</h4>
@@ -281,7 +287,9 @@ function HomePage({ data }) {
           </li>
           <li>
             <section>
-              <Img fluid={granulata_sources} />
+              <div className="workimage__wrapper">
+                <Img fluid={granulata_sources} />
+              </div>
               <div className="workdetails__wrapper">
                 <div className="workdetails">
                   <h4>Granulata</h4>
@@ -293,7 +301,9 @@ function HomePage({ data }) {
           </li>
           <li>
             <section>
-              <Img fluid={patrickmorrissey_sources} />
+              <div className="workimage__wrapper">
+                <Img fluid={patrickmorrissey_sources} />
+              </div>
               <div className="workdetails__wrapper">
                 <div className="workdetails">
                   <h4>Patrick Morrissey</h4>
