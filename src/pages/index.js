@@ -112,6 +112,8 @@ export const SiteMetadata = graphql`
   }
 `
 
+const socialGraphImg = "https://trustfulrobot.com" + social_graph_img;
+
 
 
 function HomePage({ data }) {
@@ -205,7 +207,7 @@ function HomePage({ data }) {
         <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={data.site.siteMetadata.title} />
-        <meta property="og:image" content={`${data.site.siteMetadata.siteUrl}`/`${social_graph_img}`} />
+        <meta property="og:image" content={`${socialGraphImg}`} />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="https://twitter.com/frightlab" />
