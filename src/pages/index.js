@@ -204,7 +204,7 @@ function HomePage({ data }) {
         <meta property="og:site_name" content={data.site.siteMetadata.title} />
 
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content={data.site.siteMetadata.twitter} />
+        <meta name="twitter:site" content="https://twitter.com/frightlab" />
         <html lang="en" />
       </Helmet>
       <main>

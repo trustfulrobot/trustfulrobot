@@ -25,13 +25,13 @@ module.exports = {
   {
     resolve: `gatsby-plugin-favicon`,
     options: {
-      logo: './src/favicon.png',
-      appName: 'Trustful Robot',
-      appDescription: 'Trustful Robot Webite',
-      display: 'browser',
-      lang: 'en-US',
-      background: '#fff',
-      theme_color: '#fff',
+      logo: `./src/favicon.png`,
+      appName: `Trustful Robot`,
+      appDescription: `Trustful Robot | Digital Shamanism`,
+      display: `browser`,
+      lang: `en-US`,
+      background: `#F2F4F3`,
+      theme_color: `#000807`,
       icons: {
         android: true,
         appleIcon: true,
