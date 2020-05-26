@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import { format } from "date-fns"
 import "../sass/trustfulrobot.scss"
 import svg_logo from "../../static/images/TrustfulRobot_DigitalShamanism.svg"
+import social_graph_img from "../../static/images/socialgraphimg.jpg"
 
 
 
@@ -169,6 +170,8 @@ function HomePage({ data }) {
       media: `(min-width: 768px)`,
     },
   ];
+
+  console.log(data.site.siteMetadata);
   
 
   const allInstagramDOM = data.allInstagram.instagram_post.map(function(instagram_post, index){
@@ -182,6 +185,7 @@ function HomePage({ data }) {
         <a href={igPostURL} target="_blank" rel="noopener noreferrer">
           <Img 
             fluid={igImage}
+            alt={formattedDate}
           />
         </a>
         <div className="ig-post-date">{formattedDate}</div>
@@ -202,6 +206,7 @@ function HomePage({ data }) {
         <meta property="og:url" content={data.site.siteMetadata.siteUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={data.site.siteMetadata.title} />
+        <meta property="og:image" content={`${social_graph_img}`} />
 
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="https://twitter.com/frightlab" />

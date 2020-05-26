@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: `Trustful Robot | Digital Shamanism`,
     siteUrl: `https://trustfulrobot.com`,
-    description: `Trustful Robot is here to help you navigate through your digital world.  From Front End Development to Audio Engineering to 3D Simulations and Renders, I know about a lot of things and am curious to see how I can apply my knowledge to your problem.`,
+    description: `I am a Senior Developer with a 20-year history of providing services across the full stack who has also, at times, served as a content author as well as a liaison with website clients. As such, I feel that I have a deep sensitivity to the entire spectrum of perspectives of those involved in the complete life-cycle of a website.`,
     twitter: `@frightlab`
   },
   plugins: [
