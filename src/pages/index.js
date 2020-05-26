@@ -101,7 +101,7 @@ export const SiteMetadata = graphql`
         timestamp
         localFile {
           childImageSharp {
-            fluid(maxWidth: 600, duotone: { highlight: "#DADCDB", shadow: "#536273" }){
+            fluid(maxWidth: 440, duotone: { highlight: "#DADCDB", shadow: "#536273" }){
               ...GatsbyImageSharpFluid_withWebp
             }
           }
