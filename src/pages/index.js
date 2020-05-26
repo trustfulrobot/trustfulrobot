@@ -19,77 +19,77 @@ export const SiteMetadata = graphql`
       }
     }
     bullhorn_phone: imageSharp(fluid: {originalName: {eq: "bullhorn_phone.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     bullhorn_tablet: imageSharp(fluid: {originalName: {eq: "bullhorn_tablet.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     bullhorn_desktop: imageSharp(fluid: {originalName: {eq: "bullhorn_desktop.jpg"}}) {
-      fluid(maxWidth: 1000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     castleandkey_phone: imageSharp(fluid: {originalName: {eq: "castleandkey_phone.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     castleandkey_tablet: imageSharp(fluid: {originalName: {eq: "castleandkey_tablet.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     castleandkey_desktop: imageSharp(fluid: {originalName: {eq: "castleandkey_desktop.jpg"}}) {
-      fluid(maxWidth: 1000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     granulata_phone: imageSharp(fluid: {originalName: {eq: "granulata_phone.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     granulata_tablet: imageSharp(fluid: {originalName: {eq: "granulata_tablet.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     granulata_desktop: imageSharp(fluid: {originalName: {eq: "granulata_desktop.jpg"}}) {
-      fluid(maxWidth: 1000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     lbx_phone: imageSharp(fluid: {originalName: {eq: "lbx_phone.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     lbx_tablet: imageSharp(fluid: {originalName: {eq: "lbx_tablet.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     lbx_desktop: imageSharp(fluid: {originalName: {eq: "lbx_desktop.jpg"}}) {
-      fluid(maxWidth: 1000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     patrickmorrissey_phone: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_phone.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     patrickmorrissey_tablet: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_tablet.jpg"}}) {
-      fluid(maxWidth: 600, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
     patrickmorrissey_desktop: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_desktop.jpg"}}) {
-      fluid(maxWidth: 1000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -101,7 +101,7 @@ export const SiteMetadata = graphql`
         timestamp
         localFile {
           childImageSharp {
-            fluid(maxWidth: 600, duotone: { highlight: "#DADCDB", shadow: "#536273" }){
+            fluid(maxWidth: 440, duotone: { highlight: "#DADCDB", shadow: "#536273" }){
               ...GatsbyImageSharpFluid_withWebp
             }
           }
