@@ -226,7 +226,7 @@ function HomePage({ data }) {
                 <li>Static site generation with <strong>GatsbyJS</strong> and <strong>GraphQL</strong></li>
                 <li>Content management with <strong>Prismic</strong></li>
                 <li>Hosting with <strong>Netlify</strong> & <strong>AWS</strong></li>
-                <li><strong>Continuous Integration</strong> with <strong>GitHub</strong></li>
+                <li><strong>Continuous Integration, Deployment, and Delivery</strong> with <strong>GitHub</strong></li>
               </ul>
             </section>
             <section>
