@@ -29,7 +29,7 @@ export const SiteMetadata = graphql`
       }
     }
     bullhorn_desktop: imageSharp(fluid: {originalName: {eq: "bullhorn_desktop.jpg"}}) {
-      fluid(maxWidth: 1000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -44,7 +44,7 @@ export const SiteMetadata = graphql`
       }
     }
     castleandkey_desktop: imageSharp(fluid: {originalName: {eq: "castleandkey_desktop.jpg"}}) {
-      fluid(maxWidth: 1000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -59,7 +59,7 @@ export const SiteMetadata = graphql`
       }
     }
     granulata_desktop: imageSharp(fluid: {originalName: {eq: "granulata_desktop.jpg"}}) {
-      fluid(maxWidth: 1000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -74,7 +74,7 @@ export const SiteMetadata = graphql`
       }
     }
     lbx_desktop: imageSharp(fluid: {originalName: {eq: "lbx_desktop.jpg"}}) {
-      fluid(maxWidth: 1000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
@@ -89,7 +89,7 @@ export const SiteMetadata = graphql`
       }
     }
     patrickmorrissey_desktop: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_desktop.jpg"}}) {
-      fluid(maxWidth: 1000, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
