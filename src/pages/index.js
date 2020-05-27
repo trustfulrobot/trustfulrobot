@@ -109,6 +109,96 @@ export const SiteMetadata = graphql`
         }
       }
     }
+    bullhorn_phone_hover: imageSharp(fluid: {originalName: {eq: "bullhorn_phone.jpg"}}) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    bullhorn_tablet_hover: imageSharp(fluid: {originalName: {eq: "bullhorn_tablet.jpg"}}) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    bullhorn_desktop_hover: imageSharp(fluid: {originalName: {eq: "bullhorn_desktop.jpg"}}) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    castleandkey_phone_hover: imageSharp(fluid: {originalName: {eq: "castleandkey_phone.jpg"}}) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    castleandkey_tablet_hover: imageSharp(fluid: {originalName: {eq: "castleandkey_tablet.jpg"}}) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    castleandkey_desktop_hover: imageSharp(fluid: {originalName: {eq: "castleandkey_desktop.jpg"}}) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    granulata_phone_hover: imageSharp(fluid: {originalName: {eq: "granulata_phone.jpg"}}) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    granulata_tablet_hover: imageSharp(fluid: {originalName: {eq: "granulata_tablet.jpg"}}) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    granulata_desktop_hover: imageSharp(fluid: {originalName: {eq: "granulata_desktop.jpg"}}) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    lbx_phone_hover: imageSharp(fluid: {originalName: {eq: "lbx_phone.jpg"}}) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    lbx_tablet_hover: imageSharp(fluid: {originalName: {eq: "lbx_tablet.jpg"}}) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    lbx_desktop_hover: imageSharp(fluid: {originalName: {eq: "lbx_desktop.jpg"}}) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    patrickmorrissey_phone_hover: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_phone.jpg"}}) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    patrickmorrissey_tablet_hover: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_tablet.jpg"}}) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    patrickmorrissey_desktop_hover: imageSharp(fluid: {originalName: {eq: "patrickmorrissey_desktop.jpg"}}) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#256D86" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    allInstagram_hover: allInstaNode(sort: {fields: timestamp, order: DESC}) {
+      instagram_post: nodes {
+        id
+        caption
+        original
+        timestamp
+        localFile {
+          childImageSharp {
+            fluid(maxWidth: 440, duotone: { highlight: "#DADCDB", shadow: "#256D86" }){
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
   }
 `
 
