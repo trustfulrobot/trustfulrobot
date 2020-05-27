@@ -46,6 +46,30 @@
 		position: relative;
 		width: 100%;
 		height: 100%;
+		a {
+			display: block;
+			position: relative;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: transparent;
+				z-index: +1;
+				transition: background-color 6s $easeout;
+				mix-blend-mode: overlay;
+			}
+			&:hover {				
+				&:before {
+					background-color: $tr_accent_2;
+					transition: background-color 6s $easeout;
+					mix-blend-mode: overlay;
+				}
+			}
+		}
 		.gatsby-image-wrapper {
 			& div:first-child {
 				padding-bottom: 177.84986% !important;
@@ -77,6 +101,32 @@
 .tr_block__instagram {
 	color: $tr_grey_lt;
 	background-color: $tr_grey_dk;
+	ul {
+		a {
+			position: relative;
+			display: block;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: transparent;
+				z-index: +1;
+				transition: background-color 6s $easeout;
+				mix-blend-mode: overlay;
+			}
+			&:hover {				
+				&:before {
+					background-color: $tr_accent_2;
+					transition: background-color 6s $easeout;
+					mix-blend-mode: overlay;
+				}
+			}
+		}
+	}
 }
 
 .tr_block__instagram {
@@ -98,6 +148,9 @@
 		  font-weight: 700;
 		  font-style: normal;
 		  color: $tr_white;
+		  &:hover {
+		  	color: $tr_accent_1;
+		  }
 		}
 	}
 }
@@ -162,6 +215,9 @@
 }
 
 @media all and (min-width: $width_desktop_1) {
+	.tr_block {
+		padding: 4rem 4rem 8rem 4rem;
+	}
 	.tr_block__work {
 		section {
 			grid-template-columns: minmax(0, 1fr);
@@ -189,17 +245,18 @@
 }
 
 @media all and (min-width: 1440px) {
+	.tr_block {
+		padding: 4rem 4rem 8rem 4rem;
+	}
 	.tr_block__work {
 		section {
 			font-size: 1em;
 		}
 	}
-	.tr_block__technology {
-		padding: 2rem 6rem 4rem 6rem;
-	}	
 	#worklist {
 		ul {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+			grid-gap: 6rem;
 		}
 	}
 	.tr_block__instagram {
@@ -210,14 +267,31 @@
 }
 
 @media all and (min-width: 1800px) {
+	.tr_block {
+		padding: 8rem 6rem 12rem 6rem;
+	}
 	#worklist {
 		ul {
-			grid-template-columns: repeat(4, minmax(0, 1fr));
+			// grid-template-columns: repeat(4, minmax(0, 1fr));
+			// grid-gap: 8rem;
 		}
 	}
 	.tr_block__instagram {
 		ul {
 			grid-template-columns: repeat(6, minmax(0, 1fr));
 		}
+	}
+}
+
+#bgimg {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: $tr_grey_dk;
+	z-index: -1;
+	& div:first-child {
+		// object-fit: cover !important;
+		height: 100% !important;
 	}
 }
