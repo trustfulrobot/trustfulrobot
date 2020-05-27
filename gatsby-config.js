@@ -56,6 +56,14 @@ module.exports = {
     options: {
       username: `frightlab`,
     },
+  },
+  {
+    resolve: `gatsby-plugin-web-font-loader`,
+    options: {
+      custom: {
+        families: ['HalvarEngschrift', 'HalvarMittelschrift']
+      }
+    },
   }
   ]
 }
