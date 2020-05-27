@@ -162,6 +162,9 @@
 }
 
 @media all and (min-width: $width_desktop_1) {
+	.tr_block {
+		padding: 4rem 4rem 8rem 4rem;
+	}
 	.tr_block__work {
 		section {
 			grid-template-columns: minmax(0, 1fr);
@@ -189,17 +192,18 @@
 }
 
 @media all and (min-width: 1440px) {
+	.tr_block {
+		padding: 4rem 4rem 8rem 4rem;
+	}
 	.tr_block__work {
 		section {
 			font-size: 1em;
 		}
 	}
-	.tr_block__technology {
-		padding: 2rem 6rem 4rem 6rem;
-	}	
 	#worklist {
 		ul {
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+			grid-gap: 6rem;
 		}
 	}
 	.tr_block__instagram {
@@ -210,9 +214,13 @@
 }
 
 @media all and (min-width: 1800px) {
+	.tr_block {
+		padding: 8rem 6rem 12rem 6rem;
+	}
 	#worklist {
 		ul {
-			grid-template-columns: repeat(4, minmax(0, 1fr));
+			// grid-template-columns: repeat(4, minmax(0, 1fr));
+			// grid-gap: 8rem;
 		}
 	}
 	.tr_block__instagram {
