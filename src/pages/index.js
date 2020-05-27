@@ -252,10 +252,12 @@ function HomePage({ data }) {
           <li>
             <section>
               <div className="workimage__wrapper">
-                <Img 
-                  fluid={castleandkey_sources} 
-                  alt="Castle & Key Distillery Website"
-                />
+                <a href="https://castleandkey.com/" target="_blank" rel="noopener noreferrer">
+                  <Img 
+                    fluid={castleandkey_sources} 
+                    alt="Castle & Key Distillery Website"
+                  />
+                </a>
               </div>
               <div className="workdetails__wrapper">
                 <div className="workdetails">
@@ -269,10 +271,12 @@ function HomePage({ data }) {
           <li>
             <section>
               <div className="workimage__wrapper">
-                <Img 
-                  fluid={lbx_sources}
-                  alt="Link-Belt Excavators Website" 
-                />
+                <a href="https://en.lbxco.com/" target="_blank" rel="noopener noreferrer">
+                  <Img 
+                    fluid={lbx_sources}
+                    alt="Link-Belt Excavators Website" 
+                  />
+                </a>
               </div>
               <div className="workdetails__wrapper">
                 <div className="workdetails">
@@ -286,10 +290,12 @@ function HomePage({ data }) {
           <li>
             <section>
               <div className="workimage__wrapper">
-                <Img 
-                  fluid={bullhorn_sources}
-                  alt="Bullhorn Creative Website" 
-                />
+                <a href="https://bullhorncreative.com/" target="_blank" rel="noopener noreferrer">
+                  <Img 
+                    fluid={bullhorn_sources}
+                    alt="Bullhorn Creative Website" 
+                  />
+                </a>
               </div>
               <div className="workdetails__wrapper">
                 <div className="workdetails">
@@ -303,10 +309,12 @@ function HomePage({ data }) {
           <li>
             <section>
               <div className="workimage__wrapper">
-                <Img 
-                  fluid={granulata_sources}
-                  alt="Granulata Website" 
-                />
+                <a href="https://granulata.com/" target="_blank" rel="noopener noreferrer">
+                  <Img 
+                    fluid={granulata_sources}
+                    alt="Granulata Website" 
+                  />
+                </a>
               </div>
               <div className="workdetails__wrapper">
                 <div className="workdetails">
@@ -320,10 +328,12 @@ function HomePage({ data }) {
           <li>
             <section>
               <div className="workimage__wrapper">
-                <Img 
-                  fluid={patrickmorrissey_sources}
-                  alt="Patrick Morrissey Website" 
-                />
+                <a href="http://patrickmorrissey.com/" target="_blank" rel="noopener noreferrer">
+                  <Img 
+                    fluid={patrickmorrissey_sources}
+                    alt="Patrick Morrissey Website" 
+                  />
+                </a>
               </div>
               <div className="workdetails__wrapper">
                 <div className="workdetails">
