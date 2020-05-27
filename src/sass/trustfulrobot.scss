@@ -282,3 +282,16 @@
 		}
 	}
 }
+
+#bgimg {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-color: $tr_grey_dk;
+	z-index: -1;
+	& div:first-child {
+		// object-fit: cover !important;
+		height: 100% !important;
+	}
+}

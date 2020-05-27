@@ -19,6 +19,11 @@ export const SiteMetadata = graphql`
         description
       }
     }
+    sitebgimg: imageSharp(fluid: {originalName: {eq: "site_background_img.jpg"}}) {
+      fluid(maxWidth: 2000) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
     bullhorn_phone: imageSharp(fluid: {originalName: {eq: "bullhorn_phone.jpg"}}) {
       fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
@@ -211,6 +216,12 @@ function HomePage({ data }) {
         <meta name="twitter:site" content="https://twitter.com/frightlab" />
         <html lang="en" />
       </Helmet>
+      <div id="bgimg">
+        <Img 
+          fluid={data.sitebgimg.fluid}
+          alt="Trustful Robot Business Card Presentation"
+        />
+      </div>
       <main>
         <section className="tr_block tr_block__intro">
           <h1><img src={`${svg_logo}`} alt="Trustful Robot | Digital Shamanism" /></h1>
