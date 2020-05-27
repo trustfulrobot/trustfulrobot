@@ -173,8 +173,6 @@ function HomePage({ data }) {
     },
   ];
 
-  
-
   const allInstagramDOM = data.allInstagram.instagram_post.map(function(instagram_post, index){
     const ig_post__timestamp = instagram_post.timestamp;
     const igImage = instagram_post.localFile.childImageSharp.fluid;
@@ -256,7 +254,7 @@ function HomePage({ data }) {
               <div className="workimage__wrapper">
                 <Img 
                   fluid={castleandkey_sources} 
-                  alt="Castle & Key Distillery Website" 
+                  alt="Castle & Key Distillery Website"
                 />
               </div>
               <div className="workdetails__wrapper">
