@@ -99,7 +99,7 @@ export const SiteMetadata = graphql`
         ...GatsbyImageSharpFluid_withWebp
       }
     }
-    allInstagram: allInstaNode(sort: {fields: timestamp, order: DESC}) {
+    allInstagram: allInstaNode(sort: {fields: timestamp, order: DESC}, limit: 12) {
       instagram_post: nodes {
         id
         caption
