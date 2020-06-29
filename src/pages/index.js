@@ -387,6 +387,27 @@ function HomePage({ data }) {
             </section>
           </div>
         </section>
+
+        <section className="tr_block tr_block__origin">
+          <h2>Origin Story</h2>
+          <div id="originStory">
+            <h3>So what exactly does <strong>Trustful Robot</strong> mean and from where did the name come?</h3>
+
+            <p>For the meaning, I will smile wryly and leave you to decide for yourself what it could mean but, as for the name's conception, it emerged from an agency talk that I was leading on computational creativity.  I spoke of what actually constitutes "creativity" from a computer or scientist's perspective and provided examples of specific methods and procedures that allow one to collaborate with Chance.  As a final exercise, as a group, we all created our own cut-up/fold-in prose experiments (instructions below) in order to generate a new WiFi password for the office.  "Trustful Robot" was the phrase that we all generated together and I began to really like it as an abstract idea.</p>
+
+            <h4>You can view the slides that accompanied my talk in this PDF:</h4>
+            <p><a href="/the_unseen_collaborator.pdf">the_unseen_collaborator.pdf</a></p>
+
+            <h4>Instructions for generating your own cut-up/fold-in experiments:</h4>
+            <ol>
+              <li>Choose 2-3 text sources (anything written - novels, technical manuals, journal entries, news articles, advertisements, total gibberish, etc).  I enjoy trying to make these as wildly different from one another as possible but you're the mastermind here - play by your own rules.</li>
+              <li>Take a single piece of paper and fold it into as many equal columns as you have text sources.  Lined paper will help but isn't required.</li>
+              <li>Find sections from each text source that you would like to "sample" and then, one source per page column, begin transcribing each source passage onto your folded paper by hand.  The more source text you have for each column, the more raw material you are adding in to the machine to be processed.</li>
+              <li>Unfold your paper after you have finished transcribing your single source texts and then read across the page as you would normally.  You will <em>mostly</em> get a bunch of garbage, garbled nonsense out but, if you're willing to sift through the results, I've found that I almost always generate <em>something</em> interesting and curious and new with this process.  Be open-minded to delight and wonder.</li>
+            </ol>
+          </div>
+        </section>
+
       </main>
     </div>
   )
