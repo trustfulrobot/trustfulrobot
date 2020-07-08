@@ -388,12 +388,12 @@ function HomePage({ data }) {
           </div>
         </section>
 
-        <section className="tr_block tr_block__origin">
+        <section id="originstory" className="tr_block tr_block__origin">
           <h2>Origin Story</h2>
-          <div id="originStory">
+          <div>
             <h3>So what exactly does <strong>Trustful Robot</strong> mean and from where did the name come?</h3>
 
-            <p>For the meaning, I will smile wryly and leave you to decide for yourself what it could mean but, as for the name's conception, it emerged from an agency talk that I was leading on computational creativity.  I spoke of what actually constitutes "creativity" from a computer or scientist's perspective and provided examples of specific methods and procedures that allow one to collaborate with Chance.  As a final group exercise, we all created our own cut-up/fold-in prose experiments (instructions below) in order to generate a new WiFi password for the office.  "Trustful Robot" was the phrase that we all generated together and I began to really like it as an abstract idea.</p>
+            <p>For the meaning, I will smile wryly and leave you to decide for yourself what it could mean but, as for the name's conception, it emerged from an agency talk that I was leading on computational creativity.  I spoke of what actually constitutes "creativity" from a computer or scientist's perspective and provided examples of specific methods and procedures that allow one to collaborate with Chance.  As a final group exercise, we all created our own fold-in prose experiments (instructions below) in order to generate a new WiFi password for the office.  "Trustful Robot" was the phrase that we collectively manifested and I began to really like it as an abstract idea.</p>
 
             <h4>You can view the slides that accompanied my talk in this PDF:</h4>
             <p><a href="/the_unseen_collaborator.pdf">the_unseen_collaborator.pdf</a></p>
