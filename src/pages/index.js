@@ -238,20 +238,20 @@ function HomePage({ data }) {
           <h2>Technology</h2>
           <div id="techstacks">
             <section>
-              <h3>My current preferred tech stack:</h3>
-              <ul>
-                <li>Static site generation with <strong>GatsbyJS</strong> and <strong>GraphQL</strong></li>
-                <li>Content management with <strong>Prismic</strong></li>
-                <li>Hosting with <strong>Netlify</strong> & <strong>AWS</strong></li>
-                <li><strong>Continuous Integration, Deployment, and Delivery</strong> with <strong>GitHub</strong></li>
-              </ul>
-            </section>
-            <section>
               <h3>My preferred <strong>WordPress</strong> tech stack:</h3>
               <ul>
                 <li><strong>Underscores</strong> starter theme</li>
                 <li><strong>WPGulp</strong> workflow based on <strong>npm</strong> and <strong>SASS</strong></li>
                 <li><strong>Advanced Custom Fields Pro</strong></li>
+              </ul>
+            </section>
+            <section>
+              <h3>My "currently-learning" tech stack:</h3>
+              <ul>
+                <li>Static site generation with <strong>GatsbyJS</strong> and <strong>GraphQL</strong></li>
+                <li>Content management with <strong>Prismic</strong></li>
+                <li>Hosting with <strong>Netlify</strong> & <strong>AWS</strong></li>
+                <li><strong>Continuous Integration, Deployment, and Delivery</strong> with <strong>GitHub</strong></li>
               </ul>
             </section>
           </div>
