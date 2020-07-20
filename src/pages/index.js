@@ -246,7 +246,7 @@ function HomePage({ data }) {
               </ul>
             </section>
             <section>
-              <h3>My "currently-learning" tech stack:</h3>
+              <h3>My "cutting-edge" tech stack:</h3>
               <ul>
                 <li>Static site generation with <strong>GatsbyJS</strong> and <strong>GraphQL</strong></li>
                 <li>Content management with <strong>Prismic</strong></li>
