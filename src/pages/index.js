@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { format } from "date-fns"
-import { Fade, Slide } from "react-awesome-reveal"
+import { Fade } from "react-awesome-reveal"
 import "../sass/trustfulrobot.scss"
 import svg_logo from "../../static/images/TrustfulRobot_DigitalShamanism.svg"
 import social_graph_img from "../../static/images/socialgraphimg.jpg"
@@ -271,7 +271,7 @@ function HomePage({ data }) {
           </Fade>
           <div id="worklist">
           <ul>
-            <Fade triggerOnce duration={3000} direction={"up"}>
+            <Fade triggerOnce duration={3000}>
               <li>
                 <section>
                   <div className="workimage__wrapper">
@@ -292,7 +292,7 @@ function HomePage({ data }) {
                 </section>
               </li>
             </Fade>
-            <Fade triggerOnce duration={3000} direction={"up"}>
+            <Fade triggerOnce duration={3000}>
               <li>
                 <section>
                   <div className="workimage__wrapper">
@@ -313,7 +313,7 @@ function HomePage({ data }) {
                 </section>
               </li>
             </Fade>
-            <Fade triggerOnce duration={3000} direction={"up"}>
+            <Fade triggerOnce duration={3000}>
               <li>
                   <section>
                     <div className="workimage__wrapper">
@@ -334,7 +334,7 @@ function HomePage({ data }) {
                   </section>
               </li>
             </Fade>
-            <Fade triggerOnce duration={3000} direction={"up"}>
+            <Fade triggerOnce duration={3000}>
               <li>
                   <section>
                     <div className="workimage__wrapper">
@@ -355,7 +355,7 @@ function HomePage({ data }) {
                   </section>
               </li>
             </Fade>
-            <Fade triggerOnce duration={3000} direction={"up"}>
+            <Fade triggerOnce duration={3000}>
               <li>
                   <section>
                     <div className="workimage__wrapper">
