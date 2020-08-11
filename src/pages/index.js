@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import { format } from "date-fns"
+import { Fade } from "react-awesome-reveal"
 import "../sass/trustfulrobot.scss"
 import svg_logo from "../../static/images/TrustfulRobot_DigitalShamanism.svg"
 import social_graph_img from "../../static/images/socialgraphimg.jpg"
@@ -224,37 +225,41 @@ function HomePage({ data }) {
       </div>
       <main>
         <section className="tr_block tr_block__intro">
-          <h1><img src={`${svg_logo}`} alt="Trustful Robot | Digital Shamanism" /></h1>
-          <div id="introtext">
-            <p>I am a Senior Developer with a 20-year history of providing services across the full stack who has also at times served as a content author as well as a liaison with website clients. As such, I feel that I have a <em>deep sensitivity</em> to the entire spectrum of perspectives of those involved in the complete life-cycle of a website.</p>
+          <Fade duration={3000}>
+            <h1><img src={`${svg_logo}`} alt="Trustful Robot | Digital Shamanism" /></h1>
+            <div id="introtext">
+              <p>I am a Senior Developer with a 20-year history of providing services across the full stack who has also at times served as a content author as well as a liaison with website clients. As such, I feel that I have a <em>deep sensitivity</em> to the entire spectrum of perspectives of those involved in the complete life-cycle of a website.</p>
 
-            <p>I seek to create web experiences that are not only elegant for users and content authors but also a delight with which to work for fellow developers, based on a rock-solid foundational knowledge of semantic HTML, CSS, and Javascript.</p>
+              <p>I seek to create web experiences that are not only elegant for users and content authors but also a delight with which to work for fellow developers, based on a rock-solid foundational knowledge of semantic HTML, CSS, and Javascript.</p>
 
-            <p>I am a <strong>voracious and insatiable learner</strong>, constantly searching for increasingly optimal paths and revolutionary insights.</p>
-          </div>
+              <p>I am a <strong>voracious and insatiable learner</strong>, constantly searching for increasingly optimal paths and revolutionary insights.</p>
+            </div>
+          </Fade>
         </section>
 
         <section className="tr_block tr_block__technology">
-          <h2>Technology</h2>
-          <div id="techstacks">
-            <section>
-              <h3>My preferred <strong>WordPress</strong> tech stack:</h3>
-              <ul>
-                <li><strong>Underscores</strong> starter theme</li>
-                <li><strong>WPGulp</strong> workflow based on <strong>npm</strong> and <strong>SASS</strong></li>
-                <li><strong>Advanced Custom Fields Pro</strong></li>
-              </ul>
-            </section>
-            <section>
-              <h3>My "cutting-edge" tech stack:</h3>
-              <ul>
-                <li>Static site generation with <strong>GatsbyJS</strong> and <strong>GraphQL</strong></li>
-                <li>Content management with <strong>Prismic</strong></li>
-                <li>Hosting with <strong>Netlify</strong> & <strong>AWS</strong></li>
-                <li><strong>Continuous Integration, Deployment, and Delivery</strong> with <strong>GitHub</strong></li>
-              </ul>
-            </section>
-          </div>
+          <Fade duration={2000}>
+            <h2>Technology</h2>
+            <div id="techstacks">
+              <section>
+                <h3>My preferred <strong>WordPress</strong> tech stack:</h3>
+                <ul>
+                  <li><strong>Underscores</strong> starter theme</li>
+                  <li><strong>WPGulp</strong> workflow based on <strong>npm</strong> and <strong>SASS</strong></li>
+                  <li><strong>Advanced Custom Fields Pro</strong></li>
+                </ul>
+              </section>
+              <section>
+                <h3>My "cutting-edge" tech stack:</h3>
+                <ul>
+                  <li>Static site generation with <strong>GatsbyJS</strong> and <strong>GraphQL</strong></li>
+                  <li>Content management with <strong>Prismic</strong></li>
+                  <li>Hosting with <strong>Netlify</strong> & <strong>AWS</strong></li>
+                  <li><strong>Continuous Integration, Deployment, and Delivery</strong> with <strong>GitHub</strong></li>
+                </ul>
+              </section>
+            </div>
+          </Fade>
         </section>
         <section className="tr_block tr_block__work">
           <h2>Work</h2>
