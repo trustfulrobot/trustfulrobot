@@ -25,6 +25,21 @@ export const SiteMetadata = graphql`
         ...GatsbyImageSharpFluid_withWebp
       }
     }
+    virginiaspirits_phone: imageSharp(fluid: {originalName: {eq: "virginiaspirits_phone.jpg"}}) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    virginiaspirits_tablet: imageSharp(fluid: {originalName: {eq: "virginiaspirits_tablet.jpg"}}) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    virginiaspirits_desktop: imageSharp(fluid: {originalName: {eq: "virginiaspirits_desktop.jpg"}}) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
     bullhorn_phone: imageSharp(fluid: {originalName: {eq: "bullhorn_phone.jpg"}}) {
       fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
@@ -123,6 +138,17 @@ const socialGraphImg = "https://trustfulrobot.com" + social_graph_img;
 
 
 function HomePage({ data }) {
+  const virginiaspirits_sources = [
+    data.virginiaspirits_phone.fluid,
+    {
+      ...data.virginiaspirits_desktop.fluid,
+      media: `(min-width: 992px)`,
+    },
+    {
+      ...data.virginiaspirits_tablet.fluid,
+      media: `(min-width: 768px)`,
+    },
+  ];
   const bullhorn_sources = [
     data.bullhorn_phone.fluid,
     {
@@ -271,6 +297,27 @@ function HomePage({ data }) {
           </Fade>
           <div id="worklist">
           <ul>
+            <Fade triggerOnce duration={3000}>
+              <li>
+                <section>
+                  <div className="workimage__wrapper">
+                    <a href="https://virginiaspirits.org/" target="_blank" rel="noopener noreferrer">
+                      <Img 
+                        fluid={virginiaspirits_sources} 
+                        alt="Virginia Spirits Association Website"
+                      />
+                    </a>
+                  </div>
+                  <div className="workdetails__wrapper">
+                    <div className="workdetails">
+                      <h4>Virginia Spirits Association</h4>
+                      <p>Fully-custom <strong>WordPress</strong> and <strong>Google Maps</strong> development</p>
+                      <div className="linkwrapper"><a href="https://virginiaspirits.org/" target="_blank" rel="noopener noreferrer">virginiaspirits.org</a></div>
+                    </div>
+                  </div>
+                </section>
+              </li>
+            </Fade>
             <Fade triggerOnce duration={3000}>
               <li>
                 <section>
