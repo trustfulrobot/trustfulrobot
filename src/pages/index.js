@@ -70,6 +70,36 @@ export const SiteMetadata = graphql`
         ...GatsbyImageSharpFluid_withWebp
       }
     }
+    norihall_phone: imageSharp(fluid: {originalName: {eq: "norihall_phone.jpg"}}) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    norihall_tablet: imageSharp(fluid: {originalName: {eq: "norihall_tablet.jpg"}}) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    norihall_desktop: imageSharp(fluid: {originalName: {eq: "norihall_desktop.jpg"}}) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    thriveglobalpartners_phone: imageSharp(fluid: {originalName: {eq: "thriveglobalpartners_phone.jpg"}}) {
+      fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    thriveglobalpartners_tablet: imageSharp(fluid: {originalName: {eq: "thriveglobalpartners_tablet.jpg"}}) {
+      fluid(maxWidth: 440, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+    thriveglobalpartners_desktop: imageSharp(fluid: {originalName: {eq: "thriveglobalpartners_desktop.jpg"}}) {
+      fluid(maxWidth: 720, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
     granulata_phone: imageSharp(fluid: {originalName: {eq: "granulata_phone.jpg"}}) {
       fluid(maxWidth: 320, duotone: { highlight: "#F2F4F3", shadow: "#000807" }) {
         ...GatsbyImageSharpFluid_withWebp
@@ -168,6 +198,28 @@ function HomePage({ data }) {
     },
     {
       ...data.castleandkey_tablet.fluid,
+      media: `(min-width: 768px)`,
+    },
+  ];
+  const norihall_sources = [
+    data.norihall_phone.fluid,
+    {
+      ...data.norihall_desktop.fluid,
+      media: `(min-width: 992px)`,
+    },
+    {
+      ...data.norihall_tablet.fluid,
+      media: `(min-width: 768px)`,
+    },
+  ];
+  const thriveglobalpartners_sources = [
+    data.thriveglobalpartners_phone.fluid,
+    {
+      ...data.thriveglobalpartners_desktop.fluid,
+      media: `(min-width: 992px)`,
+    },
+    {
+      ...data.thriveglobalpartners_tablet.fluid,
       media: `(min-width: 768px)`,
     },
   ];
@@ -379,6 +431,48 @@ function HomePage({ data }) {
                       </div>
                     </div>
                   </section>
+              </li>
+            </Fade>
+            <Fade triggerOnce duration={3000}>
+              <li>
+                <section>
+                  <div className="workimage__wrapper">
+                    <a href="http://thriveglobalpartners.org/" target="_blank" rel="noopener noreferrer">
+                      <Img 
+                        fluid={thriveglobalpartners_sources} 
+                        alt="Thrive Global Partners Website"
+                      />
+                    </a>
+                  </div>
+                  <div className="workdetails__wrapper">
+                    <div className="workdetails">
+                      <h4>Thrive Global Partners</h4>
+                      <p><strong>Gatsby</strong> and <strong>React</strong> development with content management in <strong>Prismic</strong></p>
+                      <div className="linkwrapper"><a href="http://thriveglobalpartners.org/" target="_blank" rel="noopener noreferrer">thriveglobalpartners.org</a></div>
+                    </div>
+                  </div>
+                </section>
+              </li>
+            </Fade>
+            <Fade triggerOnce duration={3000}>
+              <li>
+                <section>
+                  <div className="workimage__wrapper">
+                    <a href="https://norihall.com/" target="_blank" rel="noopener noreferrer">
+                      <Img 
+                        fluid={norihall_sources} 
+                        alt="Nori Hall Photography Portfolio Website"
+                      />
+                    </a>
+                  </div>
+                  <div className="workdetails__wrapper">
+                    <div className="workdetails">
+                      <h4>Nori Hall Photography</h4>
+                      <p><strong>Gatsby</strong> and <strong>React</strong> development with content management in <strong>Prismic</strong></p>
+                      <div className="linkwrapper"><a href="https://norihall.com/" target="_blank" rel="noopener noreferrer">norihall.com</a></div>
+                    </div>
+                  </div>
+                </section>
               </li>
             </Fade>
             <Fade triggerOnce duration={3000}>
